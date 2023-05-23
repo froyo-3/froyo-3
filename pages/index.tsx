@@ -6,7 +6,7 @@ const Home: NextPage = () => {
   return (
     <div className="flex min-h-screen flex-col items-center justify-center py-2">
       <Head>
-        <title>Next.js + TailwindCSS</title>
+        <title>Zirpluu.ml</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
