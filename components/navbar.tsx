@@ -23,13 +23,13 @@ function Navigation() {
         </a>
         <div className="hidden sm:flex-grow sm:flex justify-center text-xl">
           <div className="font-bold p-2 flex items-center">
-            <a href="#" className="mr-3">
+            <a href="#" className="mr-3 hover:hover:border-b-2 rounded-xl px-2">
               Link 1
             </a>
-            <a href="#" className="mr-3">
+            <a href="#" className="mr-3 hover:hover:border-b-2 rounded-xl px-2">
               Link 2
             </a>
-            <a href="#" className="">Link 3</a>
+            <a href="#" className="mr-3 hover:hover:border-b-2 rounded-xl px-2">Link 3</a>
           </div>
         </div>
         <div className="sm:hidden ml-auto">
