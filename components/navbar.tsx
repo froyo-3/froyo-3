@@ -29,7 +29,7 @@ function Navigation() {
             <a href="#" className="mr-3">
               Link 2
             </a>
-            <a href="#" className="px-2">Link 3</a>
+            <a href="#" className="">Link 3</a>
           </div>
         </div>
         <div className="sm:hidden ml-auto">
