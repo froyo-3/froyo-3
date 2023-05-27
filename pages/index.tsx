@@ -10,6 +10,10 @@ const Home: NextPage = () => {
         <Head>
           <title>Zirpluu.ml</title>
           <link rel="icon" href="/z.png" />
+          <meta
+            name="description"
+            content="zirpluu.ml"
+          />
         </Head>
 
         <Navigation />
