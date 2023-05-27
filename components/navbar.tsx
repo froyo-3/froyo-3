@@ -22,20 +22,20 @@ function Navigation() {
           />
         </a>
         <div className="hidden sm:flex-grow sm:flex justify-center text-xl">
-          <div className="font-bold p-2 flex items-center">
-            <a href="#" className="mr-3 hover:hover:border-b-2 rounded-xl px-2">
+          <div className="font-bold flex items-center space-x-8">
+            <a href="#" className="hover:border-b-2 rounded-xl px-2">
               Link 1
             </a>
-            <a href="#" className="mr-3 hover:hover:border-b-2 rounded-xl px-2">
+            <a href="#" className="hover:border-b-2 rounded-xl px-2">
               Link 2
             </a>
-            <a href="#" className="mr-3 hover:hover:border-b-2 rounded-xl px-2">Link 3</a>
+            <a href="#" className="hover:border-b-2 rounded-xl px-2">Link 3</a>
           </div>
         </div>
         <div className="sm:hidden ml-auto">
           <button
             type="button"
-            className="text-xl text-white hover:text-white focus:outline-none"
+            className="text-xl text-white hover:text-white focus:outline-none" title="open menu"
             onClick={handleMenuToggle}
           >
             <svg

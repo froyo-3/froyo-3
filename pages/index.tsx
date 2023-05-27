@@ -14,7 +14,20 @@ const Home: NextPage = () => {
 
         <Navigation />
 
-        <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center"></main>
+        <main className="flex w-full flex-1 flex-col items-center justify-center px-20 mt-5 text-center">
+          {/* <div className="flex border-b-2 border-x rounded-xl">
+            <div className="p-2 ">
+            <Image
+            className="px-2"
+            quality={20}
+            width={1920/2}
+            height={1080/2}
+            src="/Donut.png"
+            alt="Donut"
+          />
+            </div>
+          </div> */}
+        </main>
       </div>
     </div>
   );
