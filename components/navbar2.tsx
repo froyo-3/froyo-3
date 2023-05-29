@@ -9,9 +9,9 @@ function Navigation() {
   };
 
   return (
-    <nav className="font-roboto flex-row text-center sm:flex-row sm:text-left justify-between py-2 sm:items-center w-full rounded-b-xl border-b-2 bg-transparent">
+    <nav className="font-roboto flex-row text-center sm:flex-row sm:text-left justify-between py-1 px-3 sm:items-center w-full rounded-b-xl border-b-2 bg-black">
       <div className="flex items-center">
-        <a href="https://zirpluu.ml" className="ml-3">
+        <a href="https://zirpluu.ml" className="mr-3">
           <Image
             className="rounded-full"
             quality={1}
