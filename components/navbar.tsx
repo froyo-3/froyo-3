@@ -29,13 +29,16 @@ function Navigation() {
             <a href="#" className="hover:border-b-2 rounded-xl px-2">
               Link 2
             </a>
-            <a href="#" className="hover:border-b-2 rounded-xl px-2">Link 3</a>
+            <a href="#" className="hover:border-b-2 rounded-xl px-2">
+              Link 3
+            </a>
           </div>
         </div>
         <div className="sm:hidden ml-auto">
           <button
             type="button"
-            className="text-xl text-white hover:text-white focus:outline-none" title="open menu"
+            className="text-xl text-white hover:text-white focus:outline-none"
+            title="open menu"
             onClick={handleMenuToggle}
           >
             <svg
