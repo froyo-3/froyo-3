@@ -9,7 +9,7 @@ function Navigation() {
   };
 
   return (
-    <nav className="font-roboto flex-row text-center sm:flex-row sm:text-left justify-between py-2 sm:items-center w-full rounded-b-xl border-b-2 bg-transparent">
+    <nav className="backdrop-blur-sm font-roboto flex-row text-center sm:flex-row sm:text-left justify-between py-2 sm:items-center w-full rounded-b-xl border-b-2 bg-transparent">
       <div className="flex items-center">
         <a href="https://zirpluu.ml" className="ml-3">
           <Image
