@@ -5,8 +5,6 @@ import Image from "next/image";
 import { Navigation } from "../components/navbar";
 
 const Home: NextPage = () => {
-
-  
   return (
     <div className="min-h-screen items-center justify-center text-white scroll-smooth bg-black">
       <Head>
@@ -21,7 +19,7 @@ const Home: NextPage = () => {
         </header>
         <div className="relative bg-black min-h-screen max-h-screen snap-always snap-center snap-mandatory">
           <div className="text-center place-content-center pt-20 mt-10">
-            <h1 className="text-3xl font-bold tracking-tight sm:text-5xl mt-20">
+            <h1 className="text-4xl font-bold tracking-tight sm:text-5xl mt-20">
               zirpluu.ml
             </h1>
             <p className="text-base leading-7 text-gray-100 mt-2">
@@ -33,21 +31,109 @@ const Home: NextPage = () => {
             <p className="text-2xl font-bold">&#8681;</p>
           </div>
         </div>
-        <div className="bg-emerald-500 min-h-screen max-h-screen snap-always snap-start snap-mandatory">
-          <h1 className="text-center grid min-h-full place-items-center px-6 py-24 sm:py-32 lg:px-8">
-            My work
-          </h1>
-          <div className="w-64 h-auto ml-20">
-            <Image className="rounded-xl" quality={20} width={1280} height={720} src='/donut.png' alt="donut" />            </div>
-        </div>
-        <div className="bg-blue-500 min-h-screen max-h-screen snap-mandatory snap-start">
-          <div className="text-center grid min-h-full place-items-center px-6 py-24 sm:py-32 lg:px-8">
-            something
+        <div className="bg-teal-500 min-h-screen snap-mandatory snap-start">
+          <h2 className="text-center grid min-h-full place-items-center px-6 pt-24 sm:pt-32 lg:px-8 text-3xl font-bold">
+            Projects
+          </h2>
+          <div className="grid sm:grid-cols-2 mx-20 gap-x-5 gap-y-16 mt-5">
+            
+            <div className="border-b-2 border-x p-5 rounded-xl">              
+              <h4 className="italic font-mono"> reactJS </h4>
+              <h3 className="text-2xl font-sans font-bold"> emiltye.ml </h3>
+              <p className="font-mono"> the website i used to first learn react</p>
+            </div>
+            
+            <div className="border-b-2 border-x p-5 rounded-xl">              
+              <h4 className="italic font-mono"> Python </h4>
+              <h3 className="text-2xl font-sans font-bold"> Word Generator </h3>
+              <p className="font-mono"> a python script which outputs random words</p>
+            </div>
+
+            <div className="border-b-2 border-x p-5 rounded-xl">              
+              <h4 className="italic font-mono"> Python </h4>
+              <h3 className="text-2xl font-sans font-bold"> Login Page </h3>
+              <p className="font-mono"> a login page made in python</p>
+            </div>
+            
+            <div className="border-b-2 border-x p-5 rounded-xl hidden sm:block">              
+              <h4 className="italic font-mono"> Python </h4>
+              <h3 className="text-2xl font-sans font-bold"> Community Calculator </h3>
+              <p className="font-mono"> answers questions based on what it knows</p>
+            </div>
+            <div className="border-b-2 border-x p-5 rounded-xl hidden sm:block">              
+              <h4 className="italic font-mono"> Python </h4>
+              <h3 className="text-2xl font-sans font-bold"> project </h3>
+              <p className="font-mono"> Lorem ipsum dolor sit amet.</p>
+            </div>
+          
+            <div className="border-b-2 border-x p-5 rounded-xl hidden sm:block">              
+              <h4 className="italic font-mono"> Python </h4>
+              <h3 className="text-2xl font-sans font-bold"> project </h3>
+              <p className="font-mono"> Eos soluta maiores est commodi odio aut placeat ratione. </p>
+            </div>
+            
           </div>
         </div>
+        <div className="bg-teal-500 min-h-screen snap-mandatory snap-start sm:hidden">
+            <div className="border-b-2 border-x p-5 rounded-xl">              
+              <h4 className="italic font-mono"> Python </h4>
+              <h3 className="text-2xl font-sans font-bold"> Community Calculator </h3>
+              <p className="font-mono"> answers questions based on what it knows</p>
+            </div>
+            <div className="border-b-2 border-x p-5 rounded-xl">              
+              <h4 className="italic font-mono"> Python </h4>
+              <h3 className="text-2xl font-sans font-bold"> project </h3>
+              <p className="font-mono"> Lorem ipsum dolor sit amet.</p>
+            </div>
+          
+            <div className="border-b-2 border-x p-5 rounded-xl">              
+              <h4 className="italic font-mono"> Python </h4>
+              <h3 className="text-2xl font-sans font-bold"> project </h3>
+              <p className="font-mono"> Eos soluta maiores est commodi odio aut placeat ratione. </p>
+            </div>
+        </div>
+        <div className="bg-emerald-500 min-h-screen snap-always snap-start snap-mandatory">
+          <h2 className="text-center grid min-h-full place-items-center px-6 pt-24 sm:pt-32 lg:px-8 text-2xl font-bold">
+            3D Models
+          </h2>
+          <div className="grid grid-cols-3 gap-4 px-6 mt-5">
+            <div className="relative w-full h-0 pb-2/3">
+              <Image
+                className="rounded-xl"
+                quality={20}
+                width={1920}
+                height={1080}
+                src="/donut.png"
+                alt="donut"
+              />
+            </div>
+            <div className="relative w-full h-0 pb-2/3">
+              <Image
+                className="rounded-xl"
+                quality={20}
+                width={1920}
+                height={1080}
+                src="/donut.png"
+                alt="donut"
+              />
+            </div>
+            <div className="relative w-full h-0 pb-2/3">
+              <Image
+                className="rounded-xl"
+                quality={20}
+                width={1920}
+                height={1080}
+                src="/donut.png"
+                alt="donut"
+              />
+            </div>
+          </div>
+        </div>
+
+
         <div className="bg-orange-500 min-h-screen max-h-screen snap-mandatory snap-start">
           <div className="text-center grid min-h-full place-items-center px-6 py-24 sm:py-32 lg:px-8">
-            Something else
+            Link page
           </div>
         </div>
       </main>
