@@ -14,7 +14,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main className="snap-y snap-mandatory h-screen w-screen overflow-x-hidden">
-        <header className="mx-10 sticky top-0 bg-transparent z-50">
+        <header className="mx-5 sm:mx-10 sticky top-0 bg-transparent z-50">
           <Navigation />
         </header>
         <div className="relative bg-black min-h-screen max-h-screen snap-always snap-center snap-mandatory">
@@ -26,7 +26,7 @@ const Home: NextPage = () => {
               A new project
             </p>
           </div>
-          <div className="text-center absolute place-items-bottom inset-x-0 bottom-3 animate-bounce">
+          <div className="text-center absolute place-items-bottom inset-x-0 bottom-16 sm:bottom-3 animate-bounce">
             <p className="mt-6">scroll down</p>
             <p className="text-2xl font-bold">&#8681;</p>
           </div>
@@ -35,7 +35,7 @@ const Home: NextPage = () => {
           <h2 className="text-center grid min-h-full place-items-center px-6 pt-24 sm:pt-32 lg:px-8 text-3xl font-bold">
             Projects
           </h2>
-          <div className="grid sm:grid-cols-2 mx-20 gap-x-5 gap-y-16 mt-5">
+          <div className="grid sm:grid-cols-2 mx-10 sm:mx-20 gap-x-5 gap-y-16 mt-5">
             
             <div className="border-b-2 border-x p-5 rounded-xl">              
               <h4 className="italic font-mono"> reactJS </h4>
@@ -75,6 +75,7 @@ const Home: NextPage = () => {
           </div>
         </div>
         <div className="bg-teal-500 min-h-screen snap-mandatory snap-start sm:hidden">
+          <div className="grid mx-10 gap-y-16 pt-32">
             <div className="border-b-2 border-x p-5 rounded-xl">              
               <h4 className="italic font-mono"> Python </h4>
               <h3 className="text-2xl font-sans font-bold"> Community Calculator </h3>
@@ -91,6 +92,8 @@ const Home: NextPage = () => {
               <h3 className="text-2xl font-sans font-bold"> project </h3>
               <p className="font-mono"> Eos soluta maiores est commodi odio aut placeat ratione. </p>
             </div>
+          </div>
+
         </div>
         <div className="bg-emerald-500 min-h-screen snap-always snap-start snap-mandatory">
           <h2 className="text-center grid min-h-full place-items-center px-6 pt-24 sm:pt-32 lg:px-8 text-2xl font-bold">
