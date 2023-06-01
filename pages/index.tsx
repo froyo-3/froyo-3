@@ -44,7 +44,7 @@ const Home: NextPage = () => {
                 <h4 className="italic font-mono">reactJS</h4>
                 <h3 className="text-2xl font-sans font-bold">emiltye.ml</h3>
                 <p className="font-mono py-2"> the website I used to first learn react</p>
-                <p className="font-mono">Emiltye.ml was the website I used to learn React, offering a user-friendly interface and comprehensive tutorials. It provided clear explanations and practical examples for understanding component composition, state management, and event handling. Thanks to this resource, I gained the confidence and skills to develop complex React applications.</p>
+                <p className="font-mono">Emiltye.ml was the website I used to learn React. Thanks to this resource, I gained the confidence and skills to develop complex React applications.</p>
               </div>
 
               <div className="border-b-2 border-x p-5 rounded-xl flex-shrink-0 snap-center max-w-[40vh] min-w-[40vh]">
@@ -52,7 +52,7 @@ const Home: NextPage = () => {
                 <h3 className="text-2xl font-sans font-bold">Word Generator</h3>
                 <p className="font-mono py-2"> a python script which outputs random words </p>
                 <p className="font-mono">
-I developed a Python word generator program that efficiently generates unique and creative words based on specified parameters. Its customizable features, including word length, syllable patterns, and letter combinations, make it a versatile tool for naming characters, inventing product names, and inspiring creative writing.</p>
+I developed a Python word generator program that efficiently generates unique and creative words. it is a versatile tool for naming characters, inventing product names, and inspiring creative writing.</p>
               </div>
 
               <div className="border-b-2 border-x p-5 rounded-xl flex-shrink-0 snap-center max-w-[40vh] min-w-[40vh]">
