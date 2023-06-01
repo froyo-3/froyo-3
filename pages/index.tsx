@@ -32,48 +32,58 @@ const Home: NextPage = () => {
           </div>
         </div>
 
+
+
+
         <div className="bg-teal-500 min-h-screen snap-mandatory snap-start">
           <h2 className="text-center grid min-h-full place-items-center px-6 pt-24 sm:pt-32 lg:px-8 text-3xl font-bold">
             Projects
           </h2>
-          <div className="flex mx-10 sm:mx-20 gap-x-5 gap-y-5 md:gap-y-16 mt-10 max-h-screen overflow-x-auto snap-x snap-mandatory">
-              <div className="border-b-2 border-x p-5 rounded-xl flex-shrink-0 snap-center max-w-[50vh] min-w-[50vh] max-h-[50vh] min-h-[50vh]">
+            <div className="flex mx-10 sm:mx-20 gap-x-5 gap-y-5 md:gap-y-16 mt-10 max-h-screen overflow-x-auto snap-x snap-mandatory max-h-[50vh] min-h-[50vh]">
+              <div className="border-b-2 border-x p-5 rounded-xl flex-shrink-0 snap-center max-w-[40vh] min-w-[40vh]">
                 <h4 className="italic font-mono">reactJS</h4>
                 <h3 className="text-2xl font-sans font-bold">emiltye.ml</h3>
-                <p className="font-mono">the website I used to first learn react</p>
+                <p className="font-mono py-2"> the website I used to first learn react</p>
+                <p className="font-mono">Emiltye.ml was the website I used to learn React, offering a user-friendly interface and comprehensive tutorials. It provided clear explanations and practical examples for understanding component composition, state management, and event handling. Thanks to this resource, I gained the confidence and skills to develop complex React applications.</p>
               </div>
 
-              <div className="border-b-2 border-x p-5 rounded-xl flex-shrink-0 snap-center max-w-[50vh] min-w-[50vh]">
+              <div className="border-b-2 border-x p-5 rounded-xl flex-shrink-0 snap-center max-w-[40vh] min-w-[40vh]">
                 <h4 className="italic font-mono">Python</h4>
                 <h3 className="text-2xl font-sans font-bold">Word Generator</h3>
-                <p className="font-mono">a python script which outputs random words</p>
+                <p className="font-mono py-2"> a python script which outputs random words </p>
+                <p className="font-mono">
+I developed a Python word generator program that efficiently generates unique and creative words based on specified parameters. Its customizable features, including word length, syllable patterns, and letter combinations, make it a versatile tool for naming characters, inventing product names, and inspiring creative writing.</p>
               </div>
 
-              <div className="border-b-2 border-x p-5 rounded-xl flex-shrink-0 snap-center max-w-[50vh] min-w-[50vh]">
+              <div className="border-b-2 border-x p-5 rounded-xl flex-shrink-0 snap-center max-w-[40vh] min-w-[40vh]">
                 <h4 className="italic font-mono">Python</h4>
                 <h3 className="text-2xl font-sans font-bold">Login Page</h3>
                 <p className="font-mono">a login page made in python</p>
               </div>
 
-              <div className="border-b-2 border-x p-5 rounded-xl flex-shrink-0 snap-center max-w-[50vh] min-w-[50vh]">
+              <div className="border-b-2 border-x p-5 rounded-xl flex-shrink-0 snap-center max-w-[40vh] min-w-[40vh]">
                 <h4 className="italic font-mono">Python</h4>
                 <h3 className="text-2xl font-sans font-bold">Community Calculator</h3>
                 <p className="font-mono">answers questions based on what it knows</p>
               </div>
 
-              <div className="border-b-2 border-x p-5 rounded-xl flex-shrink-0 snap-center max-w-[50vh] min-w-[50vh]">
+              <div className="border-b-2 border-x p-5 rounded-xl flex-shrink-0 snap-center max-w-[40vh] min-w-[40vh]">
                 <h4 className="italic font-mono">Python</h4>
                 <h3 className="text-2xl font-sans font-bold">Project</h3>
                 <p className="font-mono">Lorem ipsum dolor sit amet.</p>
               </div>
 
-              <div className="border-b-2 border-x p-5 rounded-xl flex-shrink-0 snap-center max-w-[50vh] min-w-[50vh]">
+              <div className="border-b-2 border-x p-5 rounded-xl flex-shrink-0 snap-center max-w-[40vh] min-w-[40vh]">
                 <h4 className="italic font-mono">Python</h4>
                 <h3 className="text-2xl font-sans font-bold">Project</h3>
                 <p className="font-mono">Eos soluta maiores est commodi odio aut placeat ratione.</p>
               </div>
           </div>
         </div>
+
+
+
+
 
         <div className="bg-emerald-500 min-h-screen snap-always snap-start snap-mandatory">
           <h2 className="text-center grid min-h-full place-items-center px-6 pt-24 sm:pt-32 lg:px-8 text-2xl font-bold">
@@ -112,6 +122,10 @@ const Home: NextPage = () => {
             </div>
           </div>
         </div>
+
+
+
+
 
         <div className="bg-orange-500 min-h-screen max-h-screen snap-mandatory snap-start">
           <div className="text-center grid min-h-full place-items-center px-6 py-24 sm:py-32 lg:px-8">
