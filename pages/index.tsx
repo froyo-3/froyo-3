@@ -36,7 +36,7 @@ const Home: NextPage = () => {
           <h2 className="text-center grid min-h-full place-items-center px-6 pt-24 sm:pt-32 lg:px-8 text-3xl font-bold">
             Projects
           </h2>
-          <div className="flex mx-10 sm:mx-20 gap-x-5 gap-y-5 md:gap-y-16 mt-5 max-h-screen overflow-x-auto snap-x snap-mandatory">
+          <div className="flex mx-10 sm:mx-20 gap-x-5 gap-y-5 md:gap-y-16 mt-10 max-h-screen overflow-x-auto snap-x snap-mandatory">
               <div className="border-b-2 border-x p-5 rounded-xl flex-shrink-0 snap-center max-w-[50vh] min-w-[50vh] max-h-[50vh] min-h-[50vh]">
                 <h4 className="italic font-mono">reactJS</h4>
                 <h3 className="text-2xl font-sans font-bold">emiltye.ml</h3>
