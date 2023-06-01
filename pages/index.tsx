@@ -40,27 +40,27 @@ const Home: NextPage = () => {
             Projects
           </h2>
             <div className="flex mx-10 sm:mx-20 gap-x-5 gap-y-5 md:gap-y-16 mt-10 max-h-screen overflow-x-auto snap-x snap-mandatory max-h-[60vh] min-h-[60vh]">
-              <div className="border-b-2 border-x p-5 rounded-xl flex-shrink-0 snap-center sm:max-w-[40vh] sm:min-w-[40vh] w-3/5">
+              <div className="border-b-2 border-x p-5 rounded-xl flex-shrink-0 snap-center sm:max-w-[40vh] sm:min-w-[40vh] w-4/5">
                 <h4 className="italic font-mono">reactJS</h4>
                 <h3 className="text-2xl font-sans font-bold">emiltye.ml</h3>
                 <p className="font-mono py-2"> the website I used to first learn react</p>
                 <p className="font-mono">Emiltye.ml was a valuable website for me to learn React. It provided me with the necessary resources and guidance to enhance my skills and tackle complex React application development. Thanks to Emiltye.ml, I gained the confidence and knowledge required to build advanced React applications successfully.</p>
               </div>
 
-              <div className="border-b-2 border-x p-5 rounded-xl flex-shrink-0 snap-center sm:max-w-[40vh] sm:min-w-[40vh] w-3/5">
+              <div className="border-b-2 border-x p-5 rounded-xl flex-shrink-0 snap-center sm:max-w-[40vh] sm:min-w-[40vh] w-4/5">
                 <h4 className="italic font-mono">Python</h4>
                 <h3 className="text-2xl font-sans font-bold">Word Generator</h3>
                 <p className="font-mono py-2"> a python script which outputs random words </p>
                 <p className="font-mono">I created a Python word generator program that efficiently produces distinct and imaginative words. It serves as a versatile tool for character naming, inventing product names, and sparking creativity in writing endeavors.</p>
               </div>
 
-              <div className="border-b-2 border-x p-5 rounded-xl flex-shrink-0 snap-center sm:max-w-[40vh] sm:min-w-[40vh] w-2/5">
+              <div className="border-b-2 border-x p-5 rounded-xl flex-shrink-0 snap-center sm:max-w-[40vh] sm:min-w-[40vh] w-4/5">
                 <h4 className="italic font-mono">Python</h4>
                 <h3 className="text-2xl font-sans font-bold">Login Page</h3>
                 <p className="font-mono py-2">a login page made in python</p>
                 <p className="font-mono">I created a Python-based login page. Through a user-friendly interface, this login page prompts users to input their username and password securely. The login page then verifies the entered information against the stored credentials, granting access only to authorized users.</p>
               </div>
-              <div className="border-b-2 border-x p-5 rounded-xl flex-shrink-0 snap-center sm:max-w-[40vh] sm:min-w-[40vh] w-2/5">
+              <div className="border-b-2 border-x p-5 rounded-xl flex-shrink-0 snap-center sm:max-w-[40vh] sm:min-w-[40vh] w-4/5">
                 <h4 className="italic font-mono">Python</h4>
                 <h3 className="text-2xl font-sans font-bold">Community Calculator</h3>
                 <p className="font-mono py-2">answers questions based on what it knows</p>
