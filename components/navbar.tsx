@@ -37,7 +37,7 @@ function Navigation() {
         <div className="sm:hidden ml-auto">
           <button
             type="button"
-            className="text-xl text-white hover:text-white focus:outline-none"
+            className="text-xl text-white hover:text-white focus:outline-none mr-3"
             title="open menu"
             onClick={handleMenuToggle}
           >
@@ -67,8 +67,8 @@ function Navigation() {
         </div>
       </div>
       {isMenuOpen && (
-        <div className="mt-2 mx-10 py-2 px-3 bg-black shadow rounded-b-xl border-t-2 border-x absolute right-0 left-0 sm:hidden">
-          <div className="flex flex-col items-center">
+        <div className="mt-2 mx-10 py-2 px-3 shadow rounded-b-xl border-t-2 border-x absolute right-0 left-0 sm:hidden blur-sm">
+          <div className="flex flex-col items-center blur-none">
             <a className="block py-1" href="#link1">
               Link 1
             </a>
@@ -82,6 +82,7 @@ function Navigation() {
         </div>
       )}
     </nav>
+    
   );
 }
 
