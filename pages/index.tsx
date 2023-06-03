@@ -4,6 +4,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { Navigation } from "../components/navbar";
+import { LinkIcon } from "../components/LinkIcon";
 
 const Home: NextPage = () => {
   return (
@@ -40,63 +41,103 @@ const Home: NextPage = () => {
           <h2 className="text-center grid min-h-full place-items-center px-6 pt-24 sm:pt-32 lg:px-8 text-3xl font-bold mb-1">
             Projects
           </h2>
-            <div className="flex mx-10 sm:mx-20 gap-x-5 gap-y-5 md:gap-y-16 mt-10 max-h-screen overflow-x-auto snap-x snap-mandatory max-h-[60vh] min-h-[60vh] mb-5">
-              <div className="border-b-2 border-x p-2 rounded-xl flex-shrink-0 snap-center w-4/5 md:w-full xl:max-w-[60vh] xl:min-w-[70vh] mb-5 overflow-y-auto overflow-x-hidden">
-                <h4 className="italic font-mono">reactJS</h4>
-                <h3 className="text-2xl font-sans font-bold">emiltye.ml</h3>
-                <p className="font-mono py-2"> the website I used to first learn react</p>
-                <p className="font-mono">Emiltye.ml was a valuable website for me to learn React. It provided me with the necessary resources and guidance to enhance my skills and tackle complex React application development. Thanks to Emiltye.ml, I gained the confidence and knowledge required to build advanced React applications successfully.</p>
-                <div className="flex justify-center">
-                  <Link href="https://emiltye.ml">
-                    <button className="border rounded-xl mt-5">
-                      <p className="py-3 px-3 text-xl">
-                        visit here <Image src="/link.svg" width={24} height={24} className="inline-block ml-2" />
-                      </p>
-                    </button>
-                  </Link>
-                </div>
-
+          <div className="flex mx-10 sm:mx-20 gap-x-5 gap-y-5 md:gap-y-16 mt-10 max-h-screen overflow-x-auto snap-x snap-mandatory max-h-[60vh] min-h-[60vh] mb-5">
+            <div className="border-b-2 border-x p-2 rounded-xl flex-shrink-0 snap-center w-4/5 md:w-full xl:max-w-[60vh] xl:min-w-[70vh] mb-5 overflow-y-auto overflow-x-hidden">
+              <h4 className="italic font-mono">reactJS</h4>
+              <h3 className="text-2xl font-sans font-bold">emiltye.ml</h3>
+              <p className="font-mono py-2">the website I used to first learn react</p>
+              <p className="font-mono">Emiltye.ml was a valuable website for me to learn React. It provided me with the necessary resources and guidance to enhance my skills and tackle complex React application development. Thanks to Emiltye.ml, I gained the confidence and knowledge required to build advanced React applications successfully.</p>
+              <div className="flex justify-center inline">
+                <Link href="https://emiltye.ml">
+                  <button className="border rounded-xl mt-5">
+                    <p className="py-3 px-3 text-xl">
+                      visit here <LinkIcon />
+                    </p>
+                  </button>
+                </Link>
               </div>
-
-              <div className="border-b-2 border-x p-2 rounded-xl flex-shrink-0 snap-center w-4/5 md:w-full xl:max-w-[60vh] xl:min-w-[70vh] mb-5 overflow-y-auto">
-                <h4 className="italic font-mono">Python</h4>
-                <h3 className="text-2xl font-sans font-bold">Word Generator</h3>
-                <p className="font-mono py-2"> a python script which outputs random words </p>
-                <p className="font-mono">I created a Python word generator program that efficiently produces distinct and imaginative words. It serves as a versatile tool for character naming, inventing product names, and sparking creativity in writing endeavors.</p>
-                <div className="flex justify-center"><Link href="https://emiltye.ml"><button className="border rounded-xl mt-5"><p className="py-3 px-3 text-xl"> visit here  <Image src="/link.svg" width={24} height={24}/></p></button></Link></div>
+            </div>
+          
+            <div className="border-b-2 border-x p-2 rounded-xl flex-shrink-0 snap-center w-4/5 md:w-full xl:max-w-[60vh] xl:min-w-[70vh] mb-5 overflow-y-auto">
+              <h4 className="italic font-mono">Python</h4>
+              <h3 className="text-2xl font-sans font-bold">Word Generator</h3>
+              <p className="font-mono py-2">a python script which outputs random words</p>
+              <p className="font-mono">I created a Python word generator program that efficiently produces distinct and imaginative words. It serves as a versatile tool for character naming, inventing product names, and sparking creativity in writing endeavors.</p>
+              <div className="flex justify-center">
+                <Link href="https://emiltye.ml">
+                  <button className="border rounded-xl mt-5">
+                    <p className="py-3 px-3 text-xl">
+                      visit here <LinkIcon />
+                    </p>
+                  </button>
+                </Link>
               </div>
-
-              <div className="border-b-2 border-x p-2 rounded-xl flex-shrink-0 snap-center w-4/5 md:w-full xl:max-w-[60vh] xl:min-w-[70vh] mb-5 overflow-y-auto">
-                <h4 className="italic font-mono">Python</h4>
-                <h3 className="text-2xl font-sans font-bold">Login Page</h3>
-                <p className="font-mono py-2">a login page made in python</p>
-                <p className="font-mono">I created a Python-based login page. Through a user-friendly interface, this login page prompts users to input their username and password securely. The login page then verifies the entered information against the stored credentials, granting access only to authorized users.</p>
-                <div className="flex justify-center"><Link href="https://emiltye.ml"><button className="border rounded-xl mt-5"><p className="py-3 px-3 text-xl"> visit here  <Image src="/link.svg" width={24} height={24}/></p></button></Link></div>
+            </div>
+          
+            <div className="border-b-2 border-x p-2 rounded-xl flex-shrink-0 snap-center w-4/5 md:w-full xl:max-w-[60vh] xl:min-w-[70vh] mb-5 overflow-y-auto">
+              <h4 className="italic font-mono">Python</h4>
+              <h3 className="text-2xl font-sans font-bold">Login Page</h3>
+              <p className="font-mono py-2">a login page made in python</p>
+              <p className="font-mono">I created a Python-based login page. Through a user-friendly interface, this login page prompts users to input their username and password securely. The login page then verifies the entered information against the stored credentials, granting access only to authorized users.</p>
+              <div className="flex justify-center">
+                <Link href="https://emiltye.ml">
+                  <button className="border rounded-xl mt-5">
+                    <p className="py-3 px-3 text-xl">
+                      visit here <LinkIcon />
+                    </p>
+                  </button>
+                </Link>
               </div>
-
-              <div className="border-b-2 border-x p-2 rounded-xl flex-shrink-0 snap-center w-4/5 md:w-full xl:max-w-[60vh] xl:min-w-[70vh] mb-5 overflow-y-auto">
-                <h4 className="italic font-mono">Python</h4>
-                <h3 className="text-2xl font-sans font-bold">Community Calculator</h3>
-                <p className="font-mono py-2">answers questions based on what it knows</p>
-                <p className="font-mono"> I created an advanced calculator in Python that can do more than basic arithmetic. It can remember previous answers and use them in new calculations. This feature allows users to reference and use the results of previous equations, making it easier and faster to perform complex mathematical operations.</p>
-                <div className="flex justify-center"><Link href="https://emiltye.ml"><button className="border rounded-xl mt-5"><p className="py-3 px-3 text-xl"> visit here  <Image src="/link.svg" width={24} height={24}/></p></button></Link></div>
+            </div>
+          
+            <div className="border-b-2 border-x p-2 rounded-xl flex-shrink-0 snap-center w-4/5 md:w-full xl:max-w-[60vh] xl:min-w-[70vh] mb-5 overflow-y-auto">
+              <h4 className="italic font-mono">Python</h4>
+              <h3 className="text-2xl font-sans font-bold">Community Calculator</h3>
+              <p className="font-mono py-2">answers questions based on what it knows</p>
+              <p className="font-mono">I created an advanced calculator in Python that can do more than basic arithmetic. It can remember previous answers and use them in new calculations. This feature allows users to reference and use the results of previous equations, making it easier and faster to perform complex mathematical operations.</p>
+              <div className="flex justify-center">
+                <Link href="https://emiltye.ml">
+                  <button className="border rounded-xl mt-5">
+                    <p className="py-3 px-3 text-xl">
+                      visit here <LinkIcon />
+                    </p>
+                  </button>
+                </Link>
               </div>
-
-              <div className="border-b-2 border-x p-2 rounded-xl flex-shrink-0 snap-center w-4/5 md:w-full xl:max-w-[60vh] xl:min-w-[70vh] mb-5 overflow-y-auto">
-                <h4 className="italic font-mono">Python</h4>
-                <h3 className="text-2xl font-sans font-bold">Project</h3>
-                <p className="font-mono">Lorem ipsum dolor sit amet. In nemo odio nam minima eveniet eum voluptas illum et quos nemo aut iusto esse At omnis dolorem aut earum architecto! Non quae itaque ut nulla quam ut cumque sunt. Ea sint aperiam 33 similique fugit qui laboriosam iure qui itaque consequatur cum consequatur quod est molestiae consequuntur. Et cumque dolorem et ipsam dolore et atque voluptas.</p>
-                <div className="flex justify-center"><Link href="#"><button className="border rounded-xl mt-5"><p className="py-3 px-3 text-xl"> visit here  <Image src="/link.svg" width={24} height={24}/></p></button></Link></div>
+            </div>
+          
+            <div className="border-b-2 border-x p-2 rounded-xl flex-shrink-0 snap-center w-4/5 md:w-full xl:max-w-[60vh] xl:min-w-[70vh] mb-5 overflow-y-auto">
+              <h4 className="italic font-mono">Python</h4>
+              <h3 className="text-2xl font-sans font-bold">Project</h3>
+              <p className="font-mono">Lorem ipsum dolor sit amet. In nemo odio nam minima eveniet eum voluptas illum et quos nemo aut iusto esse At omnis dolorem aut earum architecto! Non quae itaque ut nulla quam ut cumque sunt. Ea sint aperiam 33 similique fugit qui laboriosam iure qui itaque consequatur cum consequatur quod est molestiae consequuntur. Et cumque dolorem et ipsam dolore et atque voluptas.</p>
+              <div className="flex justify-center">
+                <Link href="#">
+                  <button className="border rounded-xl mt-5">
+                    <p className="py-3 px-3 text-xl">
+                      visit here <LinkIcon />
+                    </p>
+                  </button>
+                </Link>
               </div>
-
-              <div className="border-b-2 border-x p-2 rounded-xl flex-shrink-0 snap-center w-4/5 md:w-full xl:max-w-[60vh] xl:min-w-[70vh] mb-5 overflow-y-auto">
-                <h4 className="italic font-mono">Python</h4>
-                <h3 className="text-2xl font-sans font-bold">Project</h3>
-                <p className="font-mono">Lorem ipsum dolor sit amet. Aut consequatur assumenda ad quia eaque non omnis repellat ut veritatis autem. Et inventore fugit aut voluptatem recusandae sit rerum perferendis non enim mollitia ut excepturi quia. Aut quia quidem eum nulla provident non consequatur autem et molestiae veniam sit saepe atque sed blanditiis mollitia. Ut molestias magni qui alias natus qui alias veritatis nam temporibus culpa ut modi velit!</p>
-                <div className="flex justify-center"><Link href="#"><button className="border rounded-xl mt-5"><p className="py-3 px-3 text-xl"> visit here  <Image src="/link.svg" width={24} height={24}/></p></button></Link></div>
+            </div>
+          
+            <div className="border-b-2 border-x p-2 rounded-xl flex-shrink-0 snap-center w-4/5 md:w-full xl:max-w-[60vh] xl:min-w-[70vh] mb-5 overflow-y-auto">
+              <h4 className="italic font-mono">Python</h4>
+              <h3 className="text-2xl font-sans font-bold">Project</h3>
+              <p className="font-mono">Lorem ipsum dolor sit amet. Aut consequatur assumenda ad quia eaque non omnis repellat ut veritatis autem. Et inventore fugit aut voluptatem recusandae sit rerum perferendis non enim mollitia ut excepturi quia. Aut quia quidem eum nulla provident non consequatur autem et molestiae veniam sit saepe atque sed blanditiis mollitia. Ut molestias magni qui alias natus qui alias veritatis nam temporibus culpa ut modi velit!</p>
+              <div className="flex justify-center">
+                <Link href="#">
+                  <button className="border rounded-xl mt-5">
+                    <p className="py-3 px-3 text-xl">
+                      visit here <LinkIcon />
+                    </p>
+                  </button>
+                </Link>
               </div>
+            </div>
           </div>
         </div>
+
 
 
 
