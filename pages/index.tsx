@@ -64,7 +64,7 @@ const Home: NextPage = () => {
               <p className="font-mono py-2">a python script which outputs random words</p>
               <p className="font-mono">I created a Python word generator program that efficiently produces distinct and imaginative words. It serves as a versatile tool for character naming, inventing product names, and sparking creativity in writing endeavors.</p>
               <div className="flex justify-center">
-                <Link href="https://emiltye.ml">
+                <Link href="https://replit.com/@Zirpluu/Word-Generator/">
                   <button className="border rounded-xl mt-5">
                     <p className="py-3 px-3 text-xl">
                       visit here <LinkIcon />
@@ -80,7 +80,7 @@ const Home: NextPage = () => {
               <p className="font-mono py-2">a login page made in python</p>
               <p className="font-mono">I created a Python-based login page. Through a user-friendly interface, this login page prompts users to input their username and password securely. The login page then verifies the entered information against the stored credentials, granting access only to authorized users.</p>
               <div className="flex justify-center">
-                <Link href="https://emiltye.ml">
+                <Link href="https://replit.com/@Zirpluu/Login">
                   <button className="border rounded-xl mt-5">
                     <p className="py-3 px-3 text-xl">
                       visit here <LinkIcon />
@@ -96,7 +96,7 @@ const Home: NextPage = () => {
               <p className="font-mono py-2">answers questions based on what it knows</p>
               <p className="font-mono">I created an advanced calculator in Python that can do more than basic arithmetic. It can remember previous answers and use them in new calculations. This feature allows users to reference and use the results of previous equations, making it easier and faster to perform complex mathematical operations.</p>
               <div className="flex justify-center">
-                <Link href="https://emiltye.ml">
+                <Link href="https://replit.com/@Zirpluu/Input-Based-Calculator">
                   <button className="border rounded-xl mt-5">
                     <p className="py-3 px-3 text-xl">
                       visit here <LinkIcon />
@@ -178,6 +178,12 @@ const Home: NextPage = () => {
                 alt="donut"
               />
             </div>
+          </div>
+          <div className="grid sm:grid-cols-3 gap-4 px-6 mt-5">
+            <div className="">
+              
+            </div>
+
           </div>
         </div>
 
