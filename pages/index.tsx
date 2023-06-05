@@ -4,11 +4,11 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { Navigation } from "../components/navbar";
-import { LinkIcon } from "../components/LinkIcon";
+import { LinkButton } from "../components/linkButton";
 
 const Home: NextPage = () => {
   return (
-    <div className="min-h-screen items-center justify-center text-white scroll-smooth bg-black">
+    <div className="items-center justify-center text-white bg-black">
       <Head>
         <title>Zirpluu.ml</title>
         <link rel="icon" href="/z.png" />
@@ -16,9 +16,8 @@ const Home: NextPage = () => {
       </Head>
 
       <main className="snap-y snap-mandatory h-screen w-screen overflow-x-hidden">
-        <header className="mx-5 sm:mx-10 sticky top-0 bg-transparent z-50">
-          <Navigation />
-        </header>
+        <Navigation />
+
         <div className="relative bg-black min-h-screen max-h-screen snap-always snap-center snap-mandatory">
           <div className="text-center pt-20 mt-10">
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl mt-20">
@@ -33,7 +32,6 @@ const Home: NextPage = () => {
             <p className="text-2xl font-bold">&#8681;</p>
           </div>
         </div>
-
         <div className="bg-gradient-to-b from-black to-emerald-500 min-h-screen snap-mandatory snap-start">
           <h2 className="text-center grid min-h-full place-items-center px-6 pt-24 sm:pt-32 lg:px-8 text-3xl font-bold mb-1">
             Projects
@@ -47,11 +45,7 @@ const Home: NextPage = () => {
               </p>
               <div className="flex mb-5">
                 <Link href="https://emiltye.ml">
-                  <button className="border rounded-xl mt-5">
-                    <p className="py-3 px-3 text-xl">
-                      visit here <LinkIcon />
-                    </p>
-                  </button>
+                  <LinkButton />
                 </Link>
               </div>
               <p className="font-mono">
@@ -62,7 +56,6 @@ const Home: NextPage = () => {
                 required to build advanced React applications successfully.
               </p>
             </div>
-
             <div className="border-b-2 border-x p-2 rounded-xl flex-shrink-0 snap-center w-4/5 md:w-full xl:max-w-[60vh] xl:min-w-[70vh] mb-5 overflow-y-auto">
               <h4 className="italic font-mono">Python</h4>
               <h3 className="text-2xl font-sans font-bold">Word Generator</h3>
@@ -71,11 +64,7 @@ const Home: NextPage = () => {
               </p>
               <div className="flex mb-5">
                 <Link href="https://replit.com/@Zirpluu/Word-Generator/">
-                  <button className="border rounded-xl mt-5">
-                    <p className="py-3 px-3 text-xl">
-                      visit here <LinkIcon />
-                    </p>
-                  </button>
+                  <LinkButton />
                 </Link>
               </div>
               <p className="font-mono">
@@ -85,18 +74,13 @@ const Home: NextPage = () => {
                 and sparking creativity in writing endeavors.
               </p>
             </div>
-
             <div className="border-b-2 border-x p-2 rounded-xl flex-shrink-0 snap-center w-4/5 md:w-full xl:max-w-[60vh] xl:min-w-[70vh] mb-5 overflow-y-auto">
               <h4 className="italic font-mono">Python</h4>
               <h3 className="text-2xl font-sans font-bold">Login Page</h3>
               <p className="font-mono pt-2">a login page made in python</p>
               <div className="flex mb-5">
                 <Link href="https://replit.com/@Zirpluu/Login">
-                  <button className="border rounded-xl mt-5">
-                    <p className="py-3 px-3 text-xl">
-                      visit here <LinkIcon />
-                    </p>
-                  </button>
+                  <LinkButton />
                 </Link>
               </div>
               <p className="font-mono">
@@ -107,7 +91,6 @@ const Home: NextPage = () => {
                 to authorized users.
               </p>
             </div>
-
             <div className="border-b-2 border-x p-2 rounded-xl flex-shrink-0 snap-center w-4/5 md:w-full xl:max-w-[60vh] xl:min-w-[70vh] mb-5 overflow-y-auto">
               <h4 className="italic font-mono">Python</h4>
               <h3 className="text-2xl font-sans font-bold">
@@ -118,11 +101,7 @@ const Home: NextPage = () => {
               </p>
               <div className="flex mb-5">
                 <Link href="https://replit.com/@Zirpluu/Input-Based-Calculator">
-                  <button className="border rounded-xl mt-5">
-                    <p className="py-3 px-3 text-xl">
-                      visit here <LinkIcon />
-                    </p>
-                  </button>
+                  <LinkButton />
                 </Link>
               </div>
               <p className="font-mono">
@@ -133,17 +112,12 @@ const Home: NextPage = () => {
                 faster to perform complex mathematical operations.
               </p>
             </div>
-
             <div className="border-b-2 border-x p-2 rounded-xl flex-shrink-0 snap-center w-4/5 md:w-full xl:max-w-[60vh] xl:min-w-[70vh] mb-5 overflow-y-auto">
               <h4 className="italic font-mono">Language</h4>
               <h3 className="text-2xl font-sans font-bold">Project</h3>
               <div className="flex mb-3">
                 <Link href="#">
-                  <button className="border rounded-xl mt-5">
-                    <p className="py-3 px-3 text-xl">
-                      visit here <LinkIcon />
-                    </p>
-                  </button>
+                  <LinkButton />
                 </Link>
               </div>
               <p className="font-mono">
@@ -156,17 +130,12 @@ const Home: NextPage = () => {
                 voluptas.
               </p>
             </div>
-
             <div className="border-b-2 border-x p-2 rounded-xl flex-shrink-0 snap-center w-4/5 md:w-full xl:max-w-[60vh] xl:min-w-[70vh] mb-5 overflow-y-auto">
               <h4 className="italic font-mono">Language</h4>
               <h3 className="text-2xl font-sans font-bold">Project</h3>
               <div className="flex mb-3">
                 <Link href="#">
-                  <button className="border rounded-xl mt-5">
-                    <p className="py-3 px-3 text-xl">
-                      visit here <LinkIcon />
-                    </p>
-                  </button>
+                  <LinkButton />
                 </Link>
               </div>
               <p className="font-mono">
@@ -181,7 +150,6 @@ const Home: NextPage = () => {
             </div>
           </div>
         </div>
-
         <div className="bg-emerald-500 min-h-screen snap-always snap-start snap-mandatory">
           <h2 className="text-center grid min-h-full place-items-center px-6 pt-24 sm:pt-32 lg:px-8 text-2xl font-bold">
             3D Models
@@ -207,7 +175,6 @@ const Home: NextPage = () => {
             </div>
           </div>
         </div>
-
         <div className="bg-emerald-500 min-h-screen max-h-screen snap-mandatory snap-start ">
           <h2 className="text-center grid min-h-full place-items-center px-6 pt-24 sm:pt-32 lg:px-8 text-2xl font-bold">
             Links
@@ -219,11 +186,7 @@ const Home: NextPage = () => {
               <p className="font-mono pt-2">The Community Discord</p>
               <div className="flex inline pb-5">
                 <Link href="https://discord.gg/U4SrKQPs8G">
-                  <button className="border rounded-xl mt-5">
-                    <p className="py-3 px-3 text-xl">
-                      visit here <LinkIcon />
-                    </p>
-                  </button>
+                  <LinkButton />
                 </Link>
               </div>
               <p className="font-mono">
