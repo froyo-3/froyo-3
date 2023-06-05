@@ -153,23 +153,26 @@ const Home: NextPage = () => {
           <h2 className="text-center grid min-h-full place-items-center px-6 pt-24 sm:pt-32 lg:px-8 text-2xl font-bold">
             3D Models
           </h2>
-          <div className="border-b border-x rounded-xl flex-shrink-0 snap-center w-4/5 md:w-full xl:max-w-[60vh] xl:min-w-[70vh] mb-5 overflow-y-auto">
-            <div className="flex-grow">
-              <div className="flex flex-shrink-0">
-                <Image
-                   className="rounded-t-xl"
-                   quality={20}
-                   width={1920}
-                   height={1080}
-                   src="/donut.png"
-                   alt="donut"
-                />
+          <div className="flex mx-10 sm:mx-20 gap-x-5 gap-y-5 md:gap-y-16 mt-10 max-h-screen overflow-x-auto snap-x snap-mandatory max-h-[60vh] min-h-[60vh] mb-5">
+            <div className="border-b border-x rounded-xl flex-shrink-0 snap-center w-4/5 md:w-full xl:max-w-[60vh] xl:min-w-[70vh] mb-5 overflow-y-auto">
+              <div className="flex-grow">
+                <div className="flex flex-shrink-0">
+                  <Image
+                    className="rounded-t-xl"
+                    quality={20}
+                    width={1920}
+                    height={1080}
+                    src="/donut.png"
+                    alt="donut"
+                  />
+                </div>
+              </div>
+              <div className="pl-2 mt-5">
+                <h1 className="text-xl font-bold"> Donut </h1>
+                <p> Made in blender</p>
               </div>
             </div>
-            <div className="pl-2 mt-5">
-              <h1 className="text-xl font-bold"> Donut </h1>
-              <p> Made in blender</p>
-            </div>
+            
           </div>
 
         </div>
