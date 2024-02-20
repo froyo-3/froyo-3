@@ -12,7 +12,6 @@ function Navigation() {
     <header className="mx-5 sm:mx-10 sticky top-0 bg-transparent z-50">
       <nav className="backdrop-blur-sm font-roboto flex-row text-center sm:flex-row sm:text-left justify-between py-2 sm:items-center w-full rounded-b-xl border-b-2 bg-transparent">
         <div className="flex items-center">
-          <a href="https://zirpluu.ml" className="ml-3">
             <Image
               className="rounded-full"
               quality={1}
@@ -21,17 +20,16 @@ function Navigation() {
               src="/z.png"
               alt="Logo"
             />
-          </a>
           <div className="hidden sm:flex-grow sm:flex justify-center text-xl">
             <div className="font-bold flex items-center space-x-8">
               <a href="#" className="hover:border-b-2 rounded-xl px-2">
-                Link 1
+                Projects
               </a>
               <a href="#" className="hover:border-b-2 rounded-xl px-2">
-                Link 2
+                Blender
               </a>
               <a href="#" className="hover:border-b-2 rounded-xl px-2">
-                Link 3
+                Socials
               </a>
             </div>
           </div>
@@ -68,16 +66,16 @@ function Navigation() {
           </div>
         </div>
         {isMenuOpen && (
-          <div className="mt-2 mx-10 py-2 px-3 shadow rounded-b-xl border-t-2 border-x absolute right-0 left-0 sm:hidden blur-sm">
+          <div className="mt-2 mx-10 py-2 px-3 shadow rounded-b-xl border-t-2 border-x absolute right-0 left-0 sm:hidden">
             <div className="flex flex-col items-center blur-none">
               <a className="block py-1" href="#link1">
-                Link 1
+                Projects
               </a>
               <a className="block py-1" href="#link2">
-                Link 2
+                Blender
               </a>
               <a className="block py-1" href="#link3">
-                Link 3
+                Socials
               </a>
             </div>
           </div>
