@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Navigation } from "../components/navbar";
 import { LinkButton } from "../components/linkButton";
+import { DownloadButton } from "../components/downloadButton";
 
 const Home: NextPage = () => {
   return (
@@ -170,40 +171,51 @@ const Home: NextPage = () => {
               </div>
               <div className="pl-2 mt-5">
                 <h1 className="text-xl font-bold"> Donut </h1>
-                <p> Made in blender</p>
+                <p> Made with blender</p>
+                <Link href="https://github.com/Zirpluu/blenderModels">
+                <DownloadButton/>
+                </Link>
+              </div>
+            </div>
+            <div className="border-b border-x rounded-xl flex-shrink-0 snap-center w-4/5 md:w-full xl:max-w-[60vh] xl:min-w-[70vh] mb-5 overflow-y-auto">
+              <div className="flex-grow">
+                <div className="flex flex-shrink-0">
+                  <Image
+                    className="rounded-t-xl"
+                    quality={20}
+                    width={1920}
+                    height={1080}
+                    src="/room.png"
+                    alt="room"
+                  />
+                </div>
+              </div>
+              <div className="pl-2 mt-5">
+                <h1 className="text-xl font-bold"> Room </h1>
+                <p> Made with blender </p>
+                <Link href="https://github.com/Zirpluu/blenderModels">
+                <DownloadButton/>
+                </Link>
               </div>
             </div>
           </div>
         </div>
         <div className="bg-emerald-500 min-h-screen max-h-screen snap-mandatory snap-start ">
           <h2 className="text-center grid min-h-full place-items-center px-6 pt-24 sm:pt-32 lg:px-8 text-2xl font-bold">
-            Links
+            Socials
           </h2>
           <div className="flex mx-10 sm:mt-16 sm:mx-20 gap-x-5 gap-y-5 md:gap-y-16 mt-10 max-h-screen overflow-x-auto snap-x snap-mandatory max-h-[60vh] min-h-[60vh] mb-5">
             <div className="border-b-2 border-x p-2 rounded-xl flex-shrink-0 snap-center w-4/5 md:w-full xl:max-w-[60vh] xl:min-w-[70vh] mb-5 overflow-y-auto overflow-x-hidden">
-              <h4 className="italic font-mono">Social</h4>
-              <h3 className="text-2xl font-sans font-bold">Discord</h3>
-              <p className="font-mono pt-2">The Community Discord</p>
+              <h4 className="italic font-mono"></h4>
+              <h3 className="text-2xl font-sans font-bold"></h3>
+              <p className="font-mono pt-2"></p>
               <div className="flex inline pb-5">
-                <Link href="https://discord.gg/U4SrKQPs8G">
+                <Link href="#">
                   <LinkButton />
                 </Link>
               </div>
               <p className="font-mono">
-                Zirpluu.ml is a vibrant and inclusive community Discord server
-                that brings together individuals passionate about code and
-                games. It serves as a virtual hub for enthusiastic developers,
-                gamers, and tech enthusiasts to engage in meaningful
-                discussions, exchange knowledge, and foster a supportive
-                environment. Whether you&apos;re seeking assistance with coding
-                challenges, sharing your latest gaming achievements, or simply
-                looking for like-minded individuals to connect with, Zirpluu.ml
-                offers a welcoming space for all. With its diverse range of
-                channels dedicated to specific programming languages, game
-                genres, and tech-related topics, members can easily find their
-                niche and contribute to the collective growth and enjoyment of
-                the community. Join Zirpluu.ml today and embark on an exciting
-                journey of learning, collaboration, and camaraderie.
+                
               </p>
             </div>
           </div>
