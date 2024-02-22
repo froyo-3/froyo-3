@@ -5,27 +5,40 @@ import Image from "next/image";
 import Link from "next/link";
 import { LinkButton } from "../components/linkButton";
 import { DownloadButton } from "../components/downloadButton";
-import { useRef } from "react";
 
 const Home: NextPage = () => {
-  const projectRef = useRef();
-  const blenderRef = useRef();
-  const socialsRef = useRef();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleMenuToggle = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  function projectScroll() {
-    projectRef.current.scrollIntoView({ behavior: "smooth" });
-  }
-  function blenderScroll() {
-    blenderRef.current.scrollIntoView({ behavior: "smooth" });
-  }
-  function socialsScroll() {
-    socialsRef.current.scrollIntoView({ behavior: "smooth" });
-  }
+  const topScroll = () => {
+    const topDiv = document.getElementById("topSection");
+    if (topDiv) {
+      topDiv.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const projectScroll = () => {
+    const projectDiv = document.getElementById("projectSection");
+    if (projectDiv) {
+      projectDiv.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+  const blenderScroll = () => {
+    const blenderDiv = document.getElementById("blenderSection");
+    if (blenderDiv) {
+      blenderDiv.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+  const socialsScroll = () => {
+    const socialDiv = document.getElementById("socialsSection");
+    if (socialDiv) {
+      socialDiv.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="items-center justify-center text-white bg-black">
       <Head>
@@ -39,7 +52,8 @@ const Home: NextPage = () => {
           <nav className="backdrop-blur-sm font-roboto flex-row text-center sm:flex-row sm:text-left justify-between py-2 sm:items-center w-full rounded-b-xl border-b-2 bg-transparent">
             <div className="flex items-center">
               <Image
-                className="rounded-full"
+                onClick={topScroll}
+                className="rounded-full cursor-pointer"
                 quality={1}
                 width={50}
                 height={50}
@@ -118,7 +132,10 @@ const Home: NextPage = () => {
           </nav>
         </header>
 
-        <div className="relative bg-black min-h-screen max-h-screen snap-always snap-center snap-mandatory">
+        <div
+          id="topSection"
+          className="relative bg-black min-h-screen max-h-screen snap-always snap-center snap-mandatory"
+        >
           <div className="text-center pt-20 mt-10">
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl mt-20">
               zirpluu.ml
@@ -132,11 +149,11 @@ const Home: NextPage = () => {
             <p className="text-2xl font-bold">&#8681;</p>
           </div>
         </div>
-        <div className="bg-gradient-to-b from-black to-emerald-500 min-h-screen snap-mandatory snap-start">
-          <h2
-            ref={projectRef}
-            className="text-center grid min-h-full place-items-center px-6 pt-24 sm:pt-32 lg:px-8 text-3xl font-bold mb-1"
-          >
+        <div
+          id="projectSection"
+          className="bg-gradient-to-b from-black to-emerald-500 min-h-screen snap-mandatory snap-start"
+        >
+          <h2 className="text-center grid min-h-full place-items-center px-6 pt-24 sm:pt-32 lg:px-8 text-3xl font-bold mb-1">
             Projects
           </h2>
           <div className="flex mx-10 sm:mx-20 gap-x-5 gap-y-5 md:gap-y-16 mt-10 max-h-screen overflow-x-auto snap-x snap-mandatory max-h-[60vh] min-h-[60vh] mb-5">
@@ -253,11 +270,11 @@ const Home: NextPage = () => {
             </div>
           </div>
         </div>
-        <div className="bg-emerald-500 min-h-screen snap-always snap-start snap-mandatory">
-          <h2
-            ref={blenderRef}
-            className="text-center grid min-h-full place-items-center px-6 pt-24 sm:pt-32 lg:px-8 text-2xl font-bold"
-          >
+        <div
+          id="blenderSection"
+          className="bg-emerald-500 min-h-screen snap-always snap-start snap-mandatory"
+        >
+          <h2 className="text-center grid min-h-full place-items-center px-6 pt-24 sm:pt-32 lg:px-8 text-2xl font-bold">
             Blender
           </h2>
           <div className="flex mx-10 sm:mx-20 gap-x-5 gap-y-5 md:gap-y-16 mt-10 max-h-screen overflow-x-auto snap-x snap-mandatory max-h-[60vh] min-h-[60vh] mb-5">
@@ -305,11 +322,11 @@ const Home: NextPage = () => {
             </div>
           </div>
         </div>
-        <div className="bg-emerald-500 min-h-screen max-h-screen snap-mandatory snap-start ">
-          <h2
-            ref={socialsRef}
-            className="text-center grid min-h-full place-items-center px-6 pt-24 sm:pt-32 lg:px-8 text-2xl font-bold"
-          >
+        <div
+          id="socialsSection"
+          className="bg-emerald-500 min-h-screen max-h-screen snap-mandatory snap-start "
+        >
+          <h2 className="text-center grid min-h-full place-items-center px-6 pt-24 sm:pt-32 lg:px-8 text-2xl font-bold">
             Socials
           </h2>
           <div className="flex mx-10 sm:mt-16 sm:mx-20 gap-x-5 gap-y-5 md:gap-y-16 mt-10 max-h-screen overflow-x-auto snap-x snap-mandatory max-h-[60vh] min-h-[60vh] mb-5">
