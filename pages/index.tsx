@@ -3,11 +3,29 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import { Navigation } from "../components/navbar";
 import { LinkButton } from "../components/linkButton";
 import { DownloadButton } from "../components/downloadButton";
+import { useRef } from "react";
 
 const Home: NextPage = () => {
+  const projectRef = useRef();
+  const blenderRef = useRef();
+  const socialsRef = useRef();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const handleMenuToggle = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  function projectScroll() {
+    projectRef.current.scrollIntoView({ behavior: "smooth" });
+  }
+  function blenderScroll() {
+    blenderRef.current.scrollIntoView({ behavior: "smooth" });
+  }
+  function socialsScroll() {
+    socialsRef.current.scrollIntoView({ behavior: "smooth" });
+  }
   return (
     <div className="items-center justify-center text-white bg-black">
       <Head>
@@ -17,7 +35,88 @@ const Home: NextPage = () => {
       </Head>
 
       <main className="snap-y snap-mandatory h-screen w-screen overflow-x-hidden">
-        <Navigation />
+        <header className="mx-5 sm:mx-10 sticky top-0 bg-transparent z-50">
+          <nav className="backdrop-blur-sm font-roboto flex-row text-center sm:flex-row sm:text-left justify-between py-2 sm:items-center w-full rounded-b-xl border-b-2 bg-transparent">
+            <div className="flex items-center">
+              <Image
+                className="rounded-full"
+                quality={1}
+                width={50}
+                height={50}
+                src="/z.png"
+                alt="Logo"
+              />
+              <div className="hidden sm:flex-grow sm:flex justify-center text-xl">
+                <div className="font-bold flex items-center space-x-8">
+                  <p
+                    onClick={projectScroll}
+                    className="hover:border-b-2 rounded-xl px-2 cursor-pointer"
+                  >
+                    Projects
+                  </p>
+                  <p
+                    onClick={blenderScroll}
+                    className="hover:border-b-2 rounded-xl px-2 cursor-pointer"
+                  >
+                    Blender
+                  </p>
+                  <p
+                    onClick={socialsScroll}
+                    className="hover:border-b-2 rounded-xl px-2 cursor-pointer"
+                  >
+                    Socials
+                  </p>
+                </div>
+              </div>
+              <div className="sm:hidden ml-auto">
+                <button
+                  type="button"
+                  className="text-xl text-white hover:text-white focus:outline-none mr-3"
+                  title="open menu"
+                  onClick={handleMenuToggle}
+                >
+                  <svg
+                    className="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 26"
+                    stroke="currentColor"
+                  >
+                    {isMenuOpen ? (
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={3}
+                        d="M6 18L18 6M6 6l12 12"
+                      />
+                    ) : (
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={3}
+                        d="M1 4h18M7 14h12M11 24h8"
+                      />
+                    )}
+                  </svg>
+                </button>
+              </div>
+            </div>
+            {isMenuOpen && (
+              <div className="mt-2 mx-10 py-2 px-3 shadow rounded-b-xl border-t-2 border-x absolute right-0 left-0 sm:hidden">
+                <div className="flex flex-col items-center blur-none">
+                  <a className="block py-1" href="#link1">
+                    Projects
+                  </a>
+                  <a className="block py-1" href="#link2">
+                    Blender
+                  </a>
+                  <a className="block py-1" href="#link3">
+                    Socials
+                  </a>
+                </div>
+              </div>
+            )}
+          </nav>
+        </header>
 
         <div className="relative bg-black min-h-screen max-h-screen snap-always snap-center snap-mandatory">
           <div className="text-center pt-20 mt-10">
@@ -34,7 +133,10 @@ const Home: NextPage = () => {
           </div>
         </div>
         <div className="bg-gradient-to-b from-black to-emerald-500 min-h-screen snap-mandatory snap-start">
-          <h2 className="text-center grid min-h-full place-items-center px-6 pt-24 sm:pt-32 lg:px-8 text-3xl font-bold mb-1">
+          <h2
+            ref={projectRef}
+            className="text-center grid min-h-full place-items-center px-6 pt-24 sm:pt-32 lg:px-8 text-3xl font-bold mb-1"
+          >
             Projects
           </h2>
           <div className="flex mx-10 sm:mx-20 gap-x-5 gap-y-5 md:gap-y-16 mt-10 max-h-screen overflow-x-auto snap-x snap-mandatory max-h-[60vh] min-h-[60vh] mb-5">
@@ -152,8 +254,11 @@ const Home: NextPage = () => {
           </div>
         </div>
         <div className="bg-emerald-500 min-h-screen snap-always snap-start snap-mandatory">
-          <h2 className="text-center grid min-h-full place-items-center px-6 pt-24 sm:pt-32 lg:px-8 text-2xl font-bold">
-            3D Models
+          <h2
+            ref={blenderRef}
+            className="text-center grid min-h-full place-items-center px-6 pt-24 sm:pt-32 lg:px-8 text-2xl font-bold"
+          >
+            Blender
           </h2>
           <div className="flex mx-10 sm:mx-20 gap-x-5 gap-y-5 md:gap-y-16 mt-10 max-h-screen overflow-x-auto snap-x snap-mandatory max-h-[60vh] min-h-[60vh] mb-5">
             <div className="border-b border-x rounded-xl flex-shrink-0 snap-center w-4/5 md:w-full xl:max-w-[60vh] xl:min-w-[70vh] mb-5 overflow-y-auto">
@@ -173,7 +278,7 @@ const Home: NextPage = () => {
                 <h1 className="text-xl font-bold"> Donut </h1>
                 <p> Made with blender</p>
                 <Link href="https://github.com/Zirpluu/blenderModels">
-                <DownloadButton/>
+                  <DownloadButton />
                 </Link>
               </div>
             </div>
@@ -194,14 +299,17 @@ const Home: NextPage = () => {
                 <h1 className="text-xl font-bold"> Room </h1>
                 <p> Made with blender </p>
                 <Link href="https://github.com/Zirpluu/blenderModels">
-                <DownloadButton/>
+                  <DownloadButton />
                 </Link>
               </div>
             </div>
           </div>
         </div>
         <div className="bg-emerald-500 min-h-screen max-h-screen snap-mandatory snap-start ">
-          <h2 className="text-center grid min-h-full place-items-center px-6 pt-24 sm:pt-32 lg:px-8 text-2xl font-bold">
+          <h2
+            ref={socialsRef}
+            className="text-center grid min-h-full place-items-center px-6 pt-24 sm:pt-32 lg:px-8 text-2xl font-bold"
+          >
             Socials
           </h2>
           <div className="flex mx-10 sm:mt-16 sm:mx-20 gap-x-5 gap-y-5 md:gap-y-16 mt-10 max-h-screen overflow-x-auto snap-x snap-mandatory max-h-[60vh] min-h-[60vh] mb-5">
@@ -214,9 +322,7 @@ const Home: NextPage = () => {
                   <LinkButton />
                 </Link>
               </div>
-              <p className="font-mono">
-                
-              </p>
+              <p className="font-mono"></p>
             </div>
           </div>
         </div>
