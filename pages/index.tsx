@@ -164,17 +164,28 @@ const Home: NextPage = () => {
                 the website I used to first learn react
               </p>
               <div className="flex mb-5">
-                <Link href="https://emiltye.ml">
+                <Link href="https://emiltye-ml.vercel.app">
                   <LinkButton />
                 </Link>
               </div>
               <p className="font-mono">
-                Emiltye.ml was a valuable website for me to learn React. It
-                provided me with the necessary resources and guidance to enhance
-                my skills and tackle complex React application development.
-                Thanks to Emiltye.ml, I gained the confidence and knowledge
-                required to build advanced React applications successfully.
+                Emiltye.ml was my first experience with reactJS
               </p>
+            </div>
+            <div className="border-b-2 border-x p-2 rounded-xl flex-shrink-0 snap-center w-4/5 md:w-full xl:max-w-[60vh] xl:min-w-[70vh] mb-5 overflow-y-auto">
+              <h4 className="italic font-mono">Unity + C# </h4>
+              <h3 className="text-2xl font-sans font-bold">Spell Farewell</h3>
+              <p className="font-mono pt-2">
+                a game where a wizard forgets his spells
+              </p>
+              <div className="flex mb-5">
+                <Link href="https://zirpluu.itch.io/reversemetroidvania">
+                  <LinkButton />
+                </Link>
+              </div>
+              <p className="font-mono">
+                I made this game in a week for the <a href="https://itch.io/jam/1-bit-jam-n2">1-BIT JAM #2</a>
+                </p>
             </div>
             <div className="border-b-2 border-x p-2 rounded-xl flex-shrink-0 snap-center w-4/5 md:w-full xl:max-w-[60vh] xl:min-w-[70vh] mb-5 overflow-y-auto">
               <h4 className="italic font-mono">Python</h4>
@@ -188,10 +199,7 @@ const Home: NextPage = () => {
                 </Link>
               </div>
               <p className="font-mono">
-                I created a Python word generator program that efficiently
-                produces distinct and imaginative words. It serves as a
-                versatile tool for character naming, inventing product names,
-                and sparking creativity in writing endeavors.
+                I created this script to generate random words from a list of words <a href="https://www.mit.edu/~ecprice/wordlist.10000">here</a>
               </p>
             </div>
             <div className="border-b-2 border-x p-2 rounded-xl flex-shrink-0 snap-center w-4/5 md:w-full xl:max-w-[60vh] xl:min-w-[70vh] mb-5 overflow-y-auto">
@@ -204,11 +212,7 @@ const Home: NextPage = () => {
                 </Link>
               </div>
               <p className="font-mono">
-                I created a Python-based login page. Through a user-friendly
-                interface, this login page prompts users to input their username
-                and password securely. The login page then verifies the entered
-                information against the stored credentials, granting access only
-                to authorized users.
+                I made a login script which adds the username and password from the user to text files then recalls them when the user wants to log in
               </p>
             </div>
             <div className="border-b-2 border-x p-2 rounded-xl flex-shrink-0 snap-center w-4/5 md:w-full xl:max-w-[60vh] xl:min-w-[70vh] mb-5 overflow-y-auto">
@@ -225,11 +229,7 @@ const Home: NextPage = () => {
                 </Link>
               </div>
               <p className="font-mono">
-                I created an advanced calculator in Python that can do more than
-                basic arithmetic. It can remember previous answers and use them
-                in new calculations. This feature allows users to reference and
-                use the results of previous equations, making it easier and
-                faster to perform complex mathematical operations.
+                It writes to a file the questions that the user inputs with the answers then recalls them later
               </p>
             </div>
             <div className="border-b-2 border-x p-2 rounded-xl flex-shrink-0 snap-center w-4/5 md:w-full xl:max-w-[60vh] xl:min-w-[70vh] mb-5 overflow-y-auto">
