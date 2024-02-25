@@ -199,7 +199,7 @@ const Home: NextPage = () => {
                 </Link>
               </div>
               <p className="font-mono">
-                I created this script to generate random words from a list of words <a href="https://www.mit.edu/~ecprice/wordlist.10000">here</a>
+                I created this script to generate random words from a list of words <a className="underline" href="https://www.mit.edu/~ecprice/wordlist.10000">here</a>
               </p>
             </div>
             <div className="border-b-2 border-x p-2 rounded-xl flex-shrink-0 snap-center w-4/5 md:w-full xl:max-w-[60vh] xl:min-w-[70vh] mb-5 overflow-y-auto">
