@@ -40,7 +40,7 @@ const Home: NextPage = () => {
   };
 
   return (
-    <div className="items-center justify-center text-white bg-black">
+    <div className="items-center justify-center bg-white  text-black ">
       <Head>
         <title>Zirpluu.ml</title>
         <link rel="icon" href="/z.png" />
@@ -49,7 +49,7 @@ const Home: NextPage = () => {
 
       <main className="snap-y snap-mandatory h-screen w-screen overflow-x-hidden">
         <header className="mx-5 sm:mx-10 sticky top-0 bg-transparent z-50">
-          <nav className="backdrop-blur-sm font-roboto flex-row text-center sm:flex-row sm:text-left justify-between py-2 sm:items-center w-full rounded-b-xl border-b-2 bg-transparent">
+          <nav className="backdrop-blur-sm font-roboto flex-row text-center sm:flex-row sm:text-left justify-between py-2 sm:items-center w-full rounded-b-xl border-b-2 border-black bg-transparent">
             <div className="flex items-center">
               <Image
                 onClick={topScroll}
@@ -134,13 +134,13 @@ const Home: NextPage = () => {
 
         <div
           id="topSection"
-          className="relative bg-black min-h-screen max-h-screen snap-always snap-center snap-mandatory"
+          className="relative min-h-screen max-h-screen snap-always snap-center snap-mandatory"
         >
           <div className="text-center pt-20 mt-10">
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl mt-20">
               zirpluu.ml
             </h1>
-            <p className="text-base leading-7 text-gray-100 mt-2">
+            <p className="leading-7 mt-2">
               A new project
             </p>
           </div>
@@ -151,13 +151,13 @@ const Home: NextPage = () => {
         </div>
         <div
           id="projectSection"
-          className="bg-gradient-to-b from-black to-emerald-500 min-h-screen snap-mandatory snap-start"
+          className="min-h-screen snap-mandatory snap-start"
         >
           <h2 className="text-center grid min-h-full place-items-center px-6 pt-24 sm:pt-32 lg:px-8 text-3xl font-bold mb-1">
             Projects
           </h2>
           <div className="flex mx-10 sm:mx-20 gap-x-5 gap-y-5 md:gap-y-16 mt-10 max-h-screen overflow-x-auto snap-x snap-mandatory max-h-[60vh] min-h-[60vh] mb-5">
-            <div className="border-b-2 border-x p-2 rounded-xl flex-shrink-0 snap-center w-4/5 md:w-full xl:max-w-[60vh] xl:min-w-[70vh] mb-5 overflow-y-auto overflow-x-hidden">
+            <div className="border-2 border-black p-2 rounded-xl flex-shrink-0 snap-center w-4/5 md:w-full xl:max-w-[60vh] xl:min-w-[70vh] mb-5 overflow-y-auto overflow-x-hidden">
               <h4 className="italic font-mono">reactJS</h4>
               <h3 className="text-2xl font-sans font-bold">emiltye.ml</h3>
               <p className="font-mono pt-2">
@@ -172,7 +172,7 @@ const Home: NextPage = () => {
                 Emiltye.ml was my first experience with reactJS
               </p>
             </div>
-            <div className="border-b-2 border-x p-2 rounded-xl flex-shrink-0 snap-center w-4/5 md:w-full xl:max-w-[60vh] xl:min-w-[70vh] mb-5 overflow-y-auto">
+            <div className="border-2 border-black  p-2 rounded-xl flex-shrink-0 snap-center w-4/5 md:w-full xl:max-w-[60vh] xl:min-w-[70vh] mb-5 overflow-y-auto overflow-x-hidden">
               <h4 className="italic font-mono">Unity + C# </h4>
               <h3 className="text-2xl font-sans font-bold">Spell Farewell</h3>
               <p className="font-mono pt-2">
@@ -187,7 +187,7 @@ const Home: NextPage = () => {
                 I made this game in a week for the <a href="https://itch.io/jam/1-bit-jam-n2">1-BIT JAM #2</a>
                 </p>
             </div>
-            <div className="border-b-2 border-x p-2 rounded-xl flex-shrink-0 snap-center w-4/5 md:w-full xl:max-w-[60vh] xl:min-w-[70vh] mb-5 overflow-y-auto">
+            <div className="border-2 border-black p-2 rounded-xl flex-shrink-0 snap-center w-4/5 md:w-full xl:max-w-[60vh] xl:min-w-[70vh] mb-5 overflow-y-auto overflow-x-hidden">
               <h4 className="italic font-mono">Python</h4>
               <h3 className="text-2xl font-sans font-bold">Word Generator</h3>
               <p className="font-mono pt-2">
@@ -202,7 +202,7 @@ const Home: NextPage = () => {
                 I created this script to generate random words from a list of words <a className="underline" href="https://www.mit.edu/~ecprice/wordlist.10000">here</a>
               </p>
             </div>
-            <div className="border-b-2 border-x p-2 rounded-xl flex-shrink-0 snap-center w-4/5 md:w-full xl:max-w-[60vh] xl:min-w-[70vh] mb-5 overflow-y-auto">
+            <div className="border-2 border-black p-2 rounded-xl flex-shrink-0 snap-center w-4/5 md:w-full xl:max-w-[60vh] xl:min-w-[70vh] mb-5 overflow-y-auto overflow-x-hidden">
               <h4 className="italic font-mono">Python</h4>
               <h3 className="text-2xl font-sans font-bold">Login Page</h3>
               <p className="font-mono pt-2">a login page made in python</p>
@@ -215,7 +215,7 @@ const Home: NextPage = () => {
                 I made a login script which adds the username and password from the user to text files then recalls them when the user wants to log in
               </p>
             </div>
-            <div className="border-b-2 border-x p-2 rounded-xl flex-shrink-0 snap-center w-4/5 md:w-full xl:max-w-[60vh] xl:min-w-[70vh] mb-5 overflow-y-auto">
+            <div className="border-2 border-black p-2 rounded-xl flex-shrink-0 snap-center w-4/5 md:w-full xl:max-w-[60vh] xl:min-w-[70vh] mb-5 overflow-y-auto overflow-x-hidden">
               <h4 className="italic font-mono">Python</h4>
               <h3 className="text-2xl font-sans font-bold">
                 Community Calculator
@@ -232,7 +232,7 @@ const Home: NextPage = () => {
                 It writes to a file the questions that the user inputs with the answers then recalls them later
               </p>
             </div>
-            <div className="border-b-2 border-x p-2 rounded-xl flex-shrink-0 snap-center w-4/5 md:w-full xl:max-w-[60vh] xl:min-w-[70vh] mb-5 overflow-y-auto">
+            <div className="border-2 border-black p-2 rounded-xl flex-shrink-0 snap-center w-4/5 md:w-full xl:max-w-[60vh] xl:min-w-[70vh] mb-5 overflow-y-auto overflow-x-hidden">
               <h4 className="italic font-mono">Language</h4>
               <h3 className="text-2xl font-sans font-bold">Project</h3>
               <div className="flex mb-3">
@@ -250,7 +250,7 @@ const Home: NextPage = () => {
                 voluptas.
               </p>
             </div>
-            <div className="border-b-2 border-x p-2 rounded-xl flex-shrink-0 snap-center w-4/5 md:w-full xl:max-w-[60vh] xl:min-w-[70vh] mb-5 overflow-y-auto">
+            <div className="border-2 border-black p-2 rounded-xl flex-shrink-0 snap-center w-4/5 md:w-full xl:max-w-[60vh] xl:min-w-[70vh] mb-5 overflow-y-auto overflow-x-hidden">
               <h4 className="italic font-mono">Language</h4>
               <h3 className="text-2xl font-sans font-bold">Project</h3>
               <div className="flex mb-3">
@@ -272,13 +272,13 @@ const Home: NextPage = () => {
         </div>
         <div
           id="blenderSection"
-          className="bg-emerald-500 min-h-screen snap-always snap-start snap-mandatory"
+          className="min-h-screen snap-always snap-start snap-mandatory"
         >
           <h2 className="text-center grid min-h-full place-items-center px-6 pt-24 sm:pt-32 lg:px-8 text-2xl font-bold">
             Blender
           </h2>
           <div className="flex mx-10 sm:mx-20 gap-x-5 gap-y-5 md:gap-y-16 mt-10 max-h-screen overflow-x-auto snap-x snap-mandatory max-h-[60vh] min-h-[60vh] mb-5">
-            <div className="border-b border-x rounded-xl flex-shrink-0 snap-center w-4/5 md:w-full xl:max-w-[60vh] xl:min-w-[70vh] mb-5 overflow-y-auto">
+            <div className="border-2 border-black rounded-2xl flex-shrink-0 snap-center w-4/5 md:w-full xl:max-w-[60vh] xl:min-w-[70vh] mb-5 overflow-y-auto overflow-x-hidden">
               <div className="flex-grow">
                 <div className="flex flex-shrink-0">
                   <Image
@@ -299,7 +299,7 @@ const Home: NextPage = () => {
                 </Link>
               </div>
             </div>
-            <div className="border-b border-x rounded-xl flex-shrink-0 snap-center w-4/5 md:w-full xl:max-w-[60vh] xl:min-w-[70vh] mb-5 overflow-y-auto">
+            <div className="border-2 border-black rounded-2xl flex-shrink-0 snap-center w-4/5 md:w-full xl:max-w-[60vh] xl:min-w-[70vh] mb-5 overflow-y-auto overflow-x-hidden">
               <div className="flex-grow">
                 <div className="flex flex-shrink-0">
                   <Image
@@ -324,13 +324,13 @@ const Home: NextPage = () => {
         </div>
         <div
           id="socialsSection"
-          className="bg-emerald-500 min-h-screen max-h-screen snap-mandatory snap-start "
+          className="min-h-screen max-h-screen snap-mandatory snap-start "
         >
           <h2 className="text-center grid min-h-full place-items-center px-6 pt-24 sm:pt-32 lg:px-8 text-2xl font-bold">
             Socials
           </h2>
           <div className="flex mx-10 sm:mt-16 sm:mx-20 gap-x-5 gap-y-5 md:gap-y-16 mt-10 max-h-screen overflow-x-auto snap-x snap-mandatory max-h-[60vh] min-h-[60vh] mb-5">
-            <div className="border-b-2 border-x p-2 rounded-xl flex-shrink-0 snap-center w-4/5 md:w-full xl:max-w-[60vh] xl:min-w-[70vh] mb-5 overflow-y-auto overflow-x-hidden">
+            <div className="border-2 border-black p-2 rounded-xl flex-shrink-0 snap-center w-4/5 md:w-full xl:max-w-[60vh] xl:min-w-[70vh] mb-5 overflow-y-auto overflow-x-hidden overflow-x-hidden">
               <h4 className="italic font-mono"></h4>
               <h3 className="text-2xl font-sans font-bold"></h3>
               <p className="font-mono pt-2"></p>

@@ -1,6 +1,6 @@
 function DownloadButton() {
   return (
-    <button className="border rounded-xl mt-5">
+    <button className="bg-black text-white rounded-xl mt-5">
       <p className="py-3 px-3 text-xl">
         download here
         <svg
