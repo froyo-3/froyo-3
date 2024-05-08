@@ -334,7 +334,7 @@ const Home: NextPage = () => {
                 </div>
               </div>
               <div className="pl-2 mt-5">
-                <h1 className="text-xl font-bold"> I-no's Guitar </h1>
+                <h1 className="text-xl font-bold"> I-no&apos;s Guitar </h1>
                 <p> From guilty gear strive, made with blender</p>
                 <Link href="https://github.com/Zirpluu/blenderModels/blob/main/I-noGuitar.blend">
                   <DownloadButton />
