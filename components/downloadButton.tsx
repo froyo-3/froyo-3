@@ -2,7 +2,7 @@ function DownloadButton() {
   return (
     <button className="bg-black text-white rounded-xl mt-5">
       <p className="py-3 px-3 text-xl">
-        download here
+        download
         <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"

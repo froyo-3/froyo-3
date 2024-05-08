@@ -294,7 +294,7 @@ const Home: NextPage = () => {
               <div className="pl-2 mt-5">
                 <h1 className="text-xl font-bold"> Donut </h1>
                 <p> Made with blender</p>
-                <Link href="https://github.com/Zirpluu/blenderModels">
+                <Link href="https://github.com/Zirpluu/blenderModels/blob/main/donut.blend">
                   <DownloadButton />
                 </Link>
               </div>
@@ -315,7 +315,28 @@ const Home: NextPage = () => {
               <div className="pl-2 mt-5">
                 <h1 className="text-xl font-bold"> Room </h1>
                 <p> Made with blender </p>
-                <Link href="https://github.com/Zirpluu/blenderModels">
+                <Link href="https://github.com/Zirpluu/blenderModels/blob/main/Room.blend">
+                  <DownloadButton />
+                </Link>
+              </div>
+            </div>
+            <div className="border-2 border-black rounded-2xl flex-shrink-0 snap-center w-4/5 md:w-full xl:max-w-[60vh] xl:min-w-[70vh] mb-5 overflow-y-auto overflow-x-hidden">
+              <div className="flex-grow">
+                <div className="flex flex-shrink-0">
+                  <Image
+                    className="rounded-t-xl"
+                    quality={20}
+                    width={1920}
+                    height={1080}
+                    src="/Guitar.png"
+                    alt="guitar"
+                  />
+                </div>
+              </div>
+              <div className="pl-2 mt-5">
+                <h1 className="text-xl font-bold"> I-no's Guitar </h1>
+                <p> From guilty gear strive, made with blender</p>
+                <Link href="https://github.com/Zirpluu/blenderModels/blob/main/I-noGuitar.blend">
                   <DownloadButton />
                 </Link>
               </div>
