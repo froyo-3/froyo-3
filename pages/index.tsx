@@ -93,7 +93,7 @@ const Home: NextPage = () => {
                     className="h-6 w-6"
                     fill="none"
                     viewBox="0 0 24 26"
-                    stroke="currentColor"
+                    stroke="black"
                   >
                     {isMenuOpen ? (
                       <path
@@ -115,15 +115,15 @@ const Home: NextPage = () => {
               </div>
             </div>
             {isMenuOpen && (
-              <div className="mt-2 mx-10 py-2 px-3 shadow rounded-b-xl border-t-2 border-x absolute right-0 left-0 sm:hidden">
-                <div className="flex flex-col items-center blur-none">
-                  <a className="block py-1" href="#link1">
+              <div className="mt-2 mx-10 py-2 px-3 rounded-b-xl shadow border-2 border-black absolute right-0 left-0 sm:hidden bg-white">
+                <div className="flex flex-col items-center">
+                  <a className="block py-1 cursor-pointer " onClick={projectScroll}>
                     Projects
                   </a>
-                  <a className="block py-1" href="#link2">
+                  <a className="block py-1 cursor-pointer" onClick={blenderScroll}>
                     Blender
                   </a>
-                  <a className="block py-1" href="#link3">
+                  <a className="block py-1 cursor-pointer" onClick={socialsScroll}>
                     Socials
                   </a>
                 </div>
