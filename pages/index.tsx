@@ -279,6 +279,48 @@ const Home: NextPage = () => {
           </h2>
           
           <div className="flex mx-10 sm:mx-20 gap-x-5 gap-y-5 md:gap-y-16 mt-10 max-h-screen overflow-x-auto snap-x snap-mandatory max-h-[60vh] min-h-[60vh] mb-5">
+          <div className="border-2 border-black rounded-2xl flex-shrink-0 snap-center w-4/5 md:w-full xl:max-w-[60vh] xl:min-w-[70vh] mb-5 overflow-y-auto overflow-x-hidden">
+              <div className="flex-grow">
+                <div className="flex flex-shrink-0">
+                  <Image
+                    className="rounded-t-xl"
+                    quality={20}
+                    width={1920}
+                    height={1080}
+                    src="/Models/BrisketYoyo.png"
+                    alt="Bridgets yoyo"
+                  />
+                </div>
+              </div>
+              <div className="pl-2 mt-5">
+                <h1 className="text-xl font-bold"> Bridget&apos;s yoyo </h1>
+                <p> From guilty gear strive </p>
+                <Link href="https://github.com/Zirpluu/blenderModels/blob/main/BridgetYoyo.blend">
+                  <DownloadButton />
+                </Link>
+              </div>
+            </div>
+            <div className="border-2 border-black rounded-2xl flex-shrink-0 snap-center w-4/5 md:w-full xl:max-w-[60vh] xl:min-w-[70vh] mb-5 overflow-y-auto overflow-x-hidden">
+              <div className="flex-grow">
+                <div className="flex flex-shrink-0">
+                  <Image
+                    className="rounded-t-xl"
+                    quality={20}
+                    width={1920}
+                    height={1080}
+                    src="/Models/ElpheltGun.png"
+                    alt="Elphelts Gun"
+                  />
+                </div>
+              </div>
+              <div className="pl-2 mt-5">
+                <h1 className="text-xl font-bold"> Elphelt&apos;s Sword </h1>
+                <p> From guilty gear strive</p>
+                <Link href="https://github.com/Zirpluu/blenderModels/blob/main/ElpheltGun.blend">
+                  <DownloadButton />
+                </Link>
+              </div>
+            </div>
             <div className="border-2 border-black rounded-2xl flex-shrink-0 snap-center w-4/5 md:w-full xl:max-w-[60vh] xl:min-w-[70vh] mb-5 overflow-y-auto overflow-x-hidden">
               <div className="flex-grow">
                 <div className="flex flex-shrink-0">
@@ -294,7 +336,7 @@ const Home: NextPage = () => {
               </div>
               <div className="pl-2 mt-5">
                 <h1 className="text-xl font-bold"> Ramlethal&apos;s Sword </h1>
-                <p> From guilty gear strive, made with blender</p>
+                <p> From guilty gear strive</p>
                 <Link href="https://github.com/Zirpluu/blenderModels/blob/main/RamSword.blend">
                   <DownloadButton />
                 </Link>
@@ -315,7 +357,7 @@ const Home: NextPage = () => {
               </div>
               <div className="pl-2 mt-5">
                 <h1 className="text-xl font-bold"> I-no&apos;s Guitar </h1>
-                <p> From guilty gear strive, made with blender</p>
+                <p> From guilty gear strive</p>
                 <Link href="https://github.com/Zirpluu/blenderModels/blob/main/I-noGuitar.blend">
                   <DownloadButton />
                 </Link>
@@ -336,7 +378,7 @@ const Home: NextPage = () => {
               </div>
               <div className="pl-2 mt-5">
                 <h1 className="text-xl font-bold"> Room </h1>
-                <p> Made with blender </p>
+                <p> One of my earliest projects </p>
                 <Link href="https://github.com/Zirpluu/blenderModels/blob/main/Room.blend">
                   <DownloadButton />
                 </Link>
@@ -357,7 +399,7 @@ const Home: NextPage = () => {
               </div>
               <div className="pl-2 mt-5">
                 <h1 className="text-xl font-bold"> Donut </h1>
-                <p> Made with blender</p>
+                <p> First thing i made in blender </p>
                 <Link href="https://github.com/Zirpluu/blenderModels/blob/main/donut.blend">
                   <DownloadButton />
                 </Link>
