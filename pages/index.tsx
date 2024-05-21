@@ -5,12 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { LinkButton } from "../components/linkButton";
 import { DownloadButton } from "../components/downloadButton";
-import {
-  Carousel,
-  initTWE,
-} from "tw-elements";
-
-initTWE({ Carousel });
 
 const Home: NextPage = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
