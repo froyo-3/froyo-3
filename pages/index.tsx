@@ -117,13 +117,22 @@ const Home: NextPage = () => {
             {isMenuOpen && (
               <div className="mt-2 mx-10 py-2 px-3 rounded-b-xl shadow border-2 border-black absolute right-0 left-0 sm:hidden bg-white">
                 <div className="flex flex-col items-center">
-                  <a className="block py-1 cursor-pointer " onClick={projectScroll}>
+                  <a
+                    className="block py-1 cursor-pointer "
+                    onClick={projectScroll}
+                  >
                     Projects
                   </a>
-                  <a className="block py-1 cursor-pointer" onClick={blenderScroll}>
+                  <a
+                    className="block py-1 cursor-pointer"
+                    onClick={blenderScroll}
+                  >
                     Blender
                   </a>
-                  <a className="block py-1 cursor-pointer" onClick={socialsScroll}>
+                  <a
+                    className="block py-1 cursor-pointer"
+                    onClick={socialsScroll}
+                  >
                     Socials
                   </a>
                 </div>
@@ -140,9 +149,7 @@ const Home: NextPage = () => {
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl mt-20">
               zirpluu.ml
             </h1>
-            <p className="leading-7 mt-2">
-              A new project
-            </p>
+            <p className="leading-7 mt-2">A new project</p>
           </div>
           <div className="text-center absolute place-items-bottom inset-x-0 bottom-16 sm:bottom-3 animate-bounce">
             <p className="mt-6">scroll down</p>
@@ -184,8 +191,9 @@ const Home: NextPage = () => {
                 </Link>
               </div>
               <p className="font-mono">
-                I made this game in a week for the <a href="https://itch.io/jam/1-bit-jam-n2">1-BIT JAM #2</a>
-                </p>
+                I made this game in a week for the{" "}
+                <a href="https://itch.io/jam/1-bit-jam-n2">1-BIT JAM #2</a>
+              </p>
             </div>
             <div className="border-2 border-black p-2 rounded-xl flex-shrink-0 snap-center w-4/5 md:w-full xl:max-w-[60vh] xl:min-w-[70vh] mb-5 overflow-y-auto overflow-x-hidden">
               <h4 className="italic font-mono">Python</h4>
@@ -199,7 +207,14 @@ const Home: NextPage = () => {
                 </Link>
               </div>
               <p className="font-mono">
-                I created this script to generate random words from a list of words <a className="underline" href="https://www.mit.edu/~ecprice/wordlist.10000">here</a>
+                I created this script to generate random words from a list of
+                words{" "}
+                <a
+                  className="underline"
+                  href="https://www.mit.edu/~ecprice/wordlist.10000"
+                >
+                  here
+                </a>
               </p>
             </div>
             <div className="border-2 border-black p-2 rounded-xl flex-shrink-0 snap-center w-4/5 md:w-full xl:max-w-[60vh] xl:min-w-[70vh] mb-5 overflow-y-auto overflow-x-hidden">
@@ -212,7 +227,9 @@ const Home: NextPage = () => {
                 </Link>
               </div>
               <p className="font-mono">
-                I made a login script which adds the username and password from the user to text files then recalls them when the user wants to log in
+                I made a login script which adds the username and password from
+                the user to text files then recalls them when the user wants to
+                log in
               </p>
             </div>
             <div className="border-2 border-black p-2 rounded-xl flex-shrink-0 snap-center w-4/5 md:w-full xl:max-w-[60vh] xl:min-w-[70vh] mb-5 overflow-y-auto overflow-x-hidden">
@@ -229,7 +246,8 @@ const Home: NextPage = () => {
                 </Link>
               </div>
               <p className="font-mono">
-                It writes to a file the questions that the user inputs with the answers then recalls them later
+                It writes to a file the questions that the user inputs with the
+                answers then recalls them later
               </p>
             </div>
             <div className="border-2 border-black p-2 rounded-xl flex-shrink-0 snap-center w-4/5 md:w-full xl:max-w-[60vh] xl:min-w-[70vh] mb-5 overflow-y-auto overflow-x-hidden">
@@ -277,9 +295,9 @@ const Home: NextPage = () => {
           <h2 className="text-center grid min-h-full place-items-center px-6 pt-24 sm:pt-32 lg:px-8 text-2xl font-bold">
             Blender
           </h2>
-          
+
           <div className="flex mx-10 sm:mx-20 gap-x-5 gap-y-5 md:gap-y-16 mt-10 max-h-screen overflow-x-auto snap-x snap-mandatory max-h-[60vh] min-h-[60vh] mb-5">
-          <div className="border-2 border-black rounded-2xl flex-shrink-0 snap-center w-4/5 md:w-full xl:max-w-[60vh] xl:min-w-[70vh] mb-5 overflow-y-auto overflow-x-hidden">
+            <div className="border-2 border-black rounded-2xl flex-shrink-0 snap-center w-4/5 md:w-full xl:max-w-[60vh] xl:min-w-[70vh] mb-5 overflow-y-auto overflow-x-hidden">
               <div className="flex-grow">
                 <div className="flex flex-shrink-0">
                   <Image
