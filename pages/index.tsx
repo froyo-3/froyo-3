@@ -332,7 +332,7 @@ const Home: NextPage = () => {
                 </div>
               </div>
               <div className="pl-2 mt-5">
-                <h1 className="text-xl font-bold"> Elphelt&apos;s Sword </h1>
+                <h1 className="text-xl font-bold"> Elphelt&apos;s Gun </h1>
                 <p> From guilty gear strive</p>
                 <Link href="https://github.com/Zirpluu/blenderModels/blob/main/ElpheltGun.blend">
                   <DownloadButton />
