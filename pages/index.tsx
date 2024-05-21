@@ -5,6 +5,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { LinkButton } from "../components/linkButton";
 import { DownloadButton } from "../components/downloadButton";
+import {
+  Carousel,
+  initTWE,
+} from "tw-elements";
+
+initTWE({ Carousel });
 
 const Home: NextPage = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -298,6 +304,27 @@ const Home: NextPage = () => {
 
           <div className="flex mx-10 sm:mx-20 gap-x-5 gap-y-5 md:gap-y-16 mt-10 max-h-screen overflow-x-auto snap-x snap-mandatory max-h-[60vh] min-h-[60vh] mb-5">
             <div className="border-2 border-black rounded-2xl flex-shrink-0 snap-center w-4/5 md:w-full xl:max-w-[60vh] xl:min-w-[70vh] mb-5 overflow-y-auto overflow-x-hidden">
+                <div className="flex-grow">
+                  <div className="flex flex-shrink-0">
+                    <Image
+                      className="rounded-t-xl"
+                      quality={20}
+                      width={1920}
+                      height={1080}
+                      src="/Models/InoGuitar.png"
+                      alt="Bridgets yoyo"
+                    />
+                  </div>
+                </div>
+                <div className="px-2 mt-5">
+                  <h1 className="text-xl font-bold"> Ino&apos;s Guitar </h1>
+                  <p> From guilty gear strive, remade in a different style</p>
+                  <Link href="https://github.com/Zirpluu/blenderModels/blob/main/BridgetYoyo.blend">
+                    <DownloadButton />
+                  </Link>
+                </div>
+              </div>
+            <div className="border-2 border-black rounded-2xl flex-shrink-0 snap-center w-4/5 md:w-full xl:max-w-[60vh] xl:min-w-[70vh] mb-5 overflow-y-auto overflow-x-hidden">
               <div className="flex-grow">
                 <div className="flex flex-shrink-0">
                   <Image
@@ -310,7 +337,7 @@ const Home: NextPage = () => {
                   />
                 </div>
               </div>
-              <div className="pl-2 mt-5">
+              <div className="px-2 mt-5">
                 <h1 className="text-xl font-bold"> Bridget&apos;s yoyo </h1>
                 <p> From guilty gear strive </p>
                 <Link href="https://github.com/Zirpluu/blenderModels/blob/main/BridgetYoyo.blend">
@@ -331,7 +358,7 @@ const Home: NextPage = () => {
                   />
                 </div>
               </div>
-              <div className="pl-2 mt-5">
+              <div className="px-2 mt-5">
                 <h1 className="text-xl font-bold"> Elphelt&apos;s Gun </h1>
                 <p> From guilty gear strive</p>
                 <Link href="https://github.com/Zirpluu/blenderModels/blob/main/ElpheltGun.blend">
@@ -352,7 +379,7 @@ const Home: NextPage = () => {
                   />
                 </div>
               </div>
-              <div className="pl-2 mt-5">
+              <div className="px-2 mt-5">
                 <h1 className="text-xl font-bold"> Ramlethal&apos;s Sword </h1>
                 <p> From guilty gear strive</p>
                 <Link href="https://github.com/Zirpluu/blenderModels/blob/main/RamSword.blend">
@@ -373,7 +400,7 @@ const Home: NextPage = () => {
                   />
                 </div>
               </div>
-              <div className="pl-2 mt-5">
+              <div className="px-2 mt-5">
                 <h1 className="text-xl font-bold"> I-no&apos;s Guitar </h1>
                 <p> From guilty gear strive</p>
                 <Link href="https://github.com/Zirpluu/blenderModels/blob/main/I-noGuitar.blend">
@@ -394,7 +421,7 @@ const Home: NextPage = () => {
                   />
                 </div>
               </div>
-              <div className="pl-2 mt-5">
+              <div className="px-2 mt-5">
                 <h1 className="text-xl font-bold"> Room </h1>
                 <p> One of my earliest projects </p>
                 <Link href="https://github.com/Zirpluu/blenderModels/blob/main/Room.blend">
@@ -415,7 +442,7 @@ const Home: NextPage = () => {
                   />
                 </div>
               </div>
-              <div className="pl-2 mt-5">
+              <div className="px-2 mt-5">
                 <h1 className="text-xl font-bold"> Donut </h1>
                 <p> First thing i made in blender </p>
                 <Link href="https://github.com/Zirpluu/blenderModels/blob/main/donut.blend">
