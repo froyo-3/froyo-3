@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { LinkButton } from "../components/linkButton";
 import { DownloadButton } from "../components/downloadButton";
+import { Player } from "video-react";
 
 const Home: NextPage = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -42,7 +43,7 @@ const Home: NextPage = () => {
   return (
     <div className="items-center justify-center bg-white  text-black ">
       <Head>
-        <title>Zirpluu.ml</title>
+        <title>Froyo</title>
         <link rel="icon" href="/z.png" />
         <meta name="description" content="zirpluu.ml" />
       </Head>
@@ -66,19 +67,19 @@ const Home: NextPage = () => {
                     onClick={projectScroll}
                     className="hover:border-b-2 rounded-xl px-2 cursor-pointer"
                   >
-                    Projects
+                    projects
                   </p>
                   <p
                     onClick={blenderScroll}
                     className="hover:border-b-2 rounded-xl px-2 cursor-pointer"
                   >
-                    Blender
+                    blender
                   </p>
                   <p
                     onClick={socialsScroll}
                     className="hover:border-b-2 rounded-xl px-2 cursor-pointer"
                   >
-                    Socials
+                    games
                   </p>
                 </div>
               </div>
@@ -121,19 +122,19 @@ const Home: NextPage = () => {
                     className="block py-1 cursor-pointer "
                     onClick={projectScroll}
                   >
-                    Projects
+                    projects
                   </a>
                   <a
                     className="block py-1 cursor-pointer"
                     onClick={blenderScroll}
                   >
-                    Blender
+                    blender
                   </a>
                   <a
                     className="block py-1 cursor-pointer"
                     onClick={socialsScroll}
                   >
-                    Socials
+                    games
                   </a>
                 </div>
               </div>
@@ -147,12 +148,12 @@ const Home: NextPage = () => {
         >
           <div className="text-center pt-20 mt-10">
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl mt-20">
-              zirpluu.ml
+              froyo
             </h1>
-            <p className="leading-7 mt-2">A new project</p>
+            <p className="leading-7 mt-2">A random website</p>
           </div>
           <div className="text-center absolute place-items-bottom inset-x-0 bottom-16 sm:bottom-3 animate-bounce">
-            <p className="mt-6">scroll down</p>
+            <p className="mt-6"> look at this stuff </p>
             <p className="text-2xl font-bold">&#8681;</p>
           </div>
         </div>
@@ -250,42 +251,6 @@ const Home: NextPage = () => {
                 answers then recalls them later
               </p>
             </div>
-            <div className="border-2 border-black p-2 rounded-xl flex-shrink-0 snap-center w-4/5 md:w-full xl:max-w-[60vh] xl:min-w-[70vh] mb-5 overflow-y-auto overflow-x-hidden">
-              <h4 className="italic font-mono">Language</h4>
-              <h3 className="text-2xl font-sans font-bold">Project</h3>
-              <div className="flex mb-3">
-                <Link href="#">
-                  <LinkButton />
-                </Link>
-              </div>
-              <p className="font-mono">
-                Lorem ipsum dolor sit amet. In nemo odio nam minima eveniet eum
-                voluptas illum et quos nemo aut iusto esse At omnis dolorem aut
-                earum architecto! Non quae itaque ut nulla quam ut cumque sunt.
-                Ea sint aperiam 33 similique fugit qui laboriosam iure qui
-                itaque consequatur cum consequatur quod est molestiae
-                consequuntur. Et cumque dolorem et ipsam dolore et atque
-                voluptas.
-              </p>
-            </div>
-            <div className="border-2 border-black p-2 rounded-xl flex-shrink-0 snap-center w-4/5 md:w-full xl:max-w-[60vh] xl:min-w-[70vh] mb-5 overflow-y-auto overflow-x-hidden">
-              <h4 className="italic font-mono">Language</h4>
-              <h3 className="text-2xl font-sans font-bold">Project</h3>
-              <div className="flex mb-3">
-                <Link href="#">
-                  <LinkButton />
-                </Link>
-              </div>
-              <p className="font-mono">
-                Lorem ipsum dolor sit amet. Aut consequatur assumenda ad quia
-                eaque non omnis repellat ut veritatis autem. Et inventore fugit
-                aut voluptatem recusandae sit rerum perferendis non enim
-                mollitia ut excepturi quia. Aut quia quidem eum nulla provident
-                non consequatur autem et molestiae veniam sit saepe atque sed
-                blanditiis mollitia. Ut molestias magni qui alias natus qui
-                alias veritatis nam temporibus culpa ut modi velit!
-              </p>
-            </div>
           </div>
         </div>
         <div
@@ -298,26 +263,26 @@ const Home: NextPage = () => {
 
           <div className="flex mx-10 sm:mx-20 gap-x-5 gap-y-5 md:gap-y-16 mt-10 max-h-screen overflow-x-auto snap-x snap-mandatory max-h-[60vh] min-h-[60vh] mb-5">
             <div className="border-2 border-black rounded-2xl flex-shrink-0 snap-center w-4/5 md:w-full xl:max-w-[60vh] xl:min-w-[70vh] mb-5 overflow-y-auto overflow-x-hidden">
-                <div className="flex-grow">
-                  <div className="flex flex-shrink-0">
-                    <Image
-                      className="rounded-t-xl"
-                      quality={20}
-                      width={1920}
-                      height={1080}
-                      src="/Models/InoGuitar.png"
-                      alt="Bridgets yoyo"
-                    />
-                  </div>
-                </div>
-                <div className="px-2 mt-5">
-                  <h1 className="text-xl font-bold"> Ino&apos;s Guitar </h1>
-                  <p> From guilty gear strive, remade in a different style</p>
-                  <Link href="https://github.com/Zirpluu/blenderModels/blob/main/BridgetYoyo.blend">
-                    <DownloadButton />
-                  </Link>
+              <div className="flex-grow">
+                <div className="flex flex-shrink-0">
+                  <Image
+                    className="rounded-t-xl"
+                    quality={20}
+                    width={1920}
+                    height={1080}
+                    src="/Models/InoGuitar.png"
+                    alt="Bridgets yoyo"
+                  />
                 </div>
               </div>
+              <div className="px-2 mt-5">
+                <h1 className="text-xl font-bold"> Ino&apos;s Guitar </h1>
+                <p> From guilty gear strive, remade in a different style</p>
+                <Link href="https://github.com/Zirpluu/blenderModels/blob/main/BridgetYoyo.blend">
+                  <DownloadButton />
+                </Link>
+              </div>
+            </div>
             <div className="border-2 border-black rounded-2xl flex-shrink-0 snap-center w-4/5 md:w-full xl:max-w-[60vh] xl:min-w-[70vh] mb-5 overflow-y-auto overflow-x-hidden">
               <div className="flex-grow">
                 <div className="flex flex-shrink-0">
@@ -438,7 +403,7 @@ const Home: NextPage = () => {
               </div>
               <div className="px-2 mt-5">
                 <h1 className="text-xl font-bold"> Donut </h1>
-                <p> First thing i made in blender </p>
+                <p> First thing I made in blender </p>
                 <Link href="https://github.com/Zirpluu/blenderModels/blob/main/donut.blend">
                   <DownloadButton />
                 </Link>
@@ -451,20 +416,19 @@ const Home: NextPage = () => {
           className="min-h-screen max-h-screen snap-mandatory snap-start "
         >
           <h2 className="text-center grid min-h-full place-items-center px-6 pt-24 sm:pt-32 lg:px-8 text-2xl font-bold">
-            Socials
+            games
           </h2>
           <div className="flex mx-10 sm:mt-16 sm:mx-20 gap-x-5 gap-y-5 md:gap-y-16 mt-10 max-h-screen overflow-x-auto snap-x snap-mandatory max-h-[60vh] min-h-[60vh] mb-5">
             <div className="border-2 border-black p-2 rounded-xl flex-shrink-0 snap-center w-4/5 md:w-full xl:max-w-[60vh] xl:min-w-[70vh] mb-5 overflow-y-auto overflow-x-hidden overflow-x-hidden">
-              <h4 className="italic font-mono"></h4>
-              <h3 className="text-2xl font-sans font-bold"></h3>
-              <p className="font-mono pt-2"></p>
-              <div className="flex inline pb-5">
-                <Link href="#">
-                  <LinkButton />
-                </Link>
-              </div>
-              <p className="font-mono"></p>
+              <h4 className="italic font-mono">a</h4>
+              <h3 className="text-2xl font-sans font-bold">b</h3>
+              <Player
+                playsInline
+                poster="/assets/poster.png"
+                src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
+              />
             </div>
+            
           </div>
         </div>
         <div className="py-10 bg-inherit"></div>
