@@ -6,6 +6,7 @@ import Link from "next/link";
 import { LinkButton } from "../components/linkButton";
 import { DownloadButton } from "../components/downloadButton";
 import { Player } from "video-react";
+import "../node_modules/video-react/dist/video-react.css";
 
 const Home: NextPage = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -46,6 +47,7 @@ const Home: NextPage = () => {
         <title>Froyo</title>
         <link rel="icon" href="/z.png" />
         <meta name="description" content="zirpluu.ml" />
+        <link rel="stylesheet" href="/css/video-react.css" />
       </Head>
 
       <main className="snap-y snap-mandatory h-screen w-screen overflow-x-hidden">
@@ -150,7 +152,7 @@ const Home: NextPage = () => {
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl mt-20">
               froyo
             </h1>
-            <p className="leading-7 mt-2">A random website</p>
+            <p className="leading-7 mt-2">A website</p>
           </div>
           <div className="text-center absolute place-items-bottom inset-x-0 bottom-16 sm:bottom-3 animate-bounce">
             <p className="mt-6"> look at this stuff </p>
@@ -165,21 +167,6 @@ const Home: NextPage = () => {
             Projects
           </h2>
           <div className="flex mx-10 sm:mx-20 gap-x-5 gap-y-5 md:gap-y-16 mt-10 max-h-screen overflow-x-auto snap-x snap-mandatory max-h-[60vh] min-h-[60vh] mb-5">
-            <div className="border-2 border-black p-2 rounded-xl flex-shrink-0 snap-center w-4/5 md:w-full xl:max-w-[60vh] xl:min-w-[70vh] mb-5 overflow-y-auto overflow-x-hidden">
-              <h4 className="italic font-mono">reactJS</h4>
-              <h3 className="text-2xl font-sans font-bold">emiltye.ml</h3>
-              <p className="font-mono pt-2">
-                the website I used to first learn react
-              </p>
-              <div className="flex mb-5">
-                <Link href="https://emiltye-ml.vercel.app">
-                  <LinkButton />
-                </Link>
-              </div>
-              <p className="font-mono">
-                Emiltye.ml was my first experience with reactJS
-              </p>
-            </div>
             <div className="border-2 border-black  p-2 rounded-xl flex-shrink-0 snap-center w-4/5 md:w-full xl:max-w-[60vh] xl:min-w-[70vh] mb-5 overflow-y-auto overflow-x-hidden">
               <h4 className="italic font-mono">Unity + C# </h4>
               <h3 className="text-2xl font-sans font-bold">Spell Farewell</h3>
@@ -193,7 +180,7 @@ const Home: NextPage = () => {
               </div>
               <p className="font-mono">
                 I made this game in a week for the{" "}
-                <a href="https://itch.io/jam/1-bit-jam-n2">1-BIT JAM #2</a>
+                <a className="underline" href="https://itch.io/jam/1-bit-jam-n2">1-BIT JAM #2</a>, I recommend muting it
               </p>
             </div>
             <div className="border-2 border-black p-2 rounded-xl flex-shrink-0 snap-center w-4/5 md:w-full xl:max-w-[60vh] xl:min-w-[70vh] mb-5 overflow-y-auto overflow-x-hidden">
