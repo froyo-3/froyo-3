@@ -407,13 +407,16 @@ const Home: NextPage = () => {
           </h2>
           <div className="flex mx-10 sm:mt-16 sm:mx-20 gap-x-5 gap-y-5 md:gap-y-16 mt-10 max-h-screen overflow-x-auto snap-x snap-mandatory max-h-[60vh] min-h-[60vh] mb-5">
             <div className="border-2 border-black p-2 rounded-xl flex-shrink-0 snap-center w-4/5 md:w-full xl:max-w-[60vh] xl:min-w-[70vh] mb-5 overflow-y-auto overflow-x-hidden overflow-x-hidden">
-              <h4 className="italic font-mono">a</h4>
-              <h3 className="text-2xl font-sans font-bold">b</h3>
+              <h4 className="italic font-mono">Guilty Gear Strive</h4>
+              <h3 className="text-2xl font-sans font-bold p-b-2">Silly Potemkin Match</h3>
+              <div className="p-t-2">
               <Player
                 playsInline
                 poster="/assets/poster.png"
-                src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
+                src="/potMatch.mp4"
+                
               />
+              </div>
             </div>
             
           </div>
